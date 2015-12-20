@@ -13,5 +13,4 @@ public class ActionTemplateStep {
 	public void setAction(ActionTemplateEnum action) {
 		this.action = action;
 	}
-	
 }

@@ -1,0 +1,26 @@
+------------------- Output code module --------------------
+
+- Create template config
+	- create template config for each action
+	- precedence of diferent properties
+
+
+  Each template config has to have
+  - a configuration to each command (text and substitute)
+  	
+  	- substitutes
+  		- action (object and method call)
+  		- element (search of the object)
+  		- value (value of the element if has)
+  
+
+		actionConfigTemplate = "driver.findElement(#).click();"
+		actionConfigTemplate = "By.id("#")" << get by the element
+
+
+
+driver.findElement(By.id("gbqfb")).click();
+
+
+
+-----------------------------------------------------------
