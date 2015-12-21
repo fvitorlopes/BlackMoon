@@ -1,28 +1,29 @@
 package dtos.templateConfig;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import enums.ActionTemplateEnum;
+import enums.ElementSearchConfigEnum;
+import exceptions.BlackMoonException;
 
 public class ActionTemplateConfig {
 
 	// one of those for each command
 	private String substitute;
 	private ActionTemplateEnum action;
-	private List<ElementTemplateConfig> elements;
+	private List<ElementTemplateConfig> elements = new ArrayList<ElementTemplateConfig>();
 
 	public ActionTemplateConfig() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	
+
 	public ActionTemplateConfig(String substitute, ActionTemplateEnum action, List<ElementTemplateConfig> elements) {
 		super();
 		this.substitute = substitute;
 		this.action = action;
 		this.elements = elements;
 	}
-
 
 	public List<ElementTemplateConfig> getElements() {
 		return elements;
@@ -48,4 +49,21 @@ public class ActionTemplateConfig {
 		this.action = action;
 	}
 
+	public void removeElement(ElementTemplateConfig element) {
+		elements.remove(element);
+	}
+
+	public void addElement(ElementTemplateConfig element) {
+		elements.add(element);
+	}
+
+	public ElementTemplateConfig searchElement(ElementSearchConfigEnum elementSearch) throws BlackMoonException{
+		for(ElementTemplateConfig etc : elements){
+			if(etc.getElementSearch().equals(elementSearch)){
+				return etc;
+			}
+		}
+		throw new BlackMoonException("Element search not found");
+	}
+	
 }

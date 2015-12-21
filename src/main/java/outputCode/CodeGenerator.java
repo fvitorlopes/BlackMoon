@@ -1,8 +1,10 @@
 package outputCode;
 
 import dtos.templateConfig.ActionTemplateConfig;
+import dtos.templateConfig.ElementTemplateConfig;
 import dtos.templateConfig.TemplateConfig;
 import enums.ActionTemplateEnum;
+import enums.ElementSearchConfigEnum;
 import exceptions.BlackMoonException;
 
 public class CodeGenerator {
@@ -18,14 +20,14 @@ public class CodeGenerator {
 		// iterate the test
 		// get a dto with the action , the selenium element and the value
 		// search the correspondent actionTemplateConfig by the action
+	
 		
 		ActionTemplateConfig resultATC = templateConfig.getActionTemplateConfigByAction(ActionTemplateEnum.CLICK);
-	
+		// Create elements and stuff
+		ElementTemplateConfig elementTemplateConfig = new ElementTemplateConfig("By.id(#)", ElementSearchConfigEnum.ID);
 		
-		for (ActionTemplateConfig actionTemplateConfig : templateConfig.getActions()) {
+
 		
-		}
-	
 		code += templateConfig.getFooter();
 		return code;
 	}
