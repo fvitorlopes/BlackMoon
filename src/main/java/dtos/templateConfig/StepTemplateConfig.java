@@ -7,5 +7,4 @@ public class StepTemplateConfig {
 //	private ActionTemplateConfig action;
 	
 	
-	
 }

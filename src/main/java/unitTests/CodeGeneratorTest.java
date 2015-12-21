@@ -17,7 +17,11 @@ public class CodeGeneratorTest {
 		templateConfig.setHeader("begining");
 		templateConfig.setHeader("end");
 
+		try {
 		assertTrue(codeGenerator.generateCode(templateConfig) != null);
+		} catch (Exception e) {
+			assertTrue(false);
+		}
 		
 		// implementation of unity test
 	}
