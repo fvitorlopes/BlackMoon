@@ -52,4 +52,48 @@ public class TemplateConfig {
 		}
 		throw new BlackMoonException("Action not found");
 	}
+
+	@Override
+	public String toString() {
+		return "TemplateConfig [header=" + header + ", footer=" + footer + ", actions=" + actions + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((actions == null) ? 0 : actions.hashCode());
+		result = prime * result + ((footer == null) ? 0 : footer.hashCode());
+		result = prime * result + ((header == null) ? 0 : header.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		TemplateConfig other = (TemplateConfig) obj;
+		if (actions == null) {
+			if (other.actions != null)
+				return false;
+		} else if (!actions.equals(other.actions))
+			return false;
+		if (footer == null) {
+			if (other.footer != null)
+				return false;
+		} else if (!footer.equals(other.footer))
+			return false;
+		if (header == null) {
+			if (other.header != null)
+				return false;
+		} else if (!header.equals(other.header))
+			return false;
+		return true;
+	}
+
+
 }

@@ -65,5 +65,45 @@ public class ActionTemplateConfig {
 		}
 		throw new BlackMoonException("Element search not found");
 	}
+
+	@Override
+	public String toString() {
+		return "ActionTemplateConfig [substitute=" + substitute + ", action=" + action + ", elements=" + elements + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((action == null) ? 0 : action.hashCode());
+		result = prime * result + ((elements == null) ? 0 : elements.hashCode());
+		result = prime * result + ((substitute == null) ? 0 : substitute.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ActionTemplateConfig other = (ActionTemplateConfig) obj;
+		if (action != other.action)
+			return false;
+		if (elements == null) {
+			if (other.elements != null)
+				return false;
+		} else if (!elements.equals(other.elements))
+			return false;
+		if (substitute == null) {
+			if (other.substitute != null)
+				return false;
+		} else if (!substitute.equals(other.substitute))
+			return false;
+		return true;
+	}
+	
 	
 }
