@@ -1,11 +1,12 @@
 package dtos.template;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CodeTemplate {
 	
 	private String name;
-	private List<CodeTemplateStep> steps;
+	private List<CodeTemplateStep> steps = new ArrayList<CodeTemplateStep>();
 
 	public String getName() {
 		return name;
@@ -14,6 +15,9 @@ public class CodeTemplate {
 		this.name = name;
 	}
 	public List<CodeTemplateStep> getSteps() {
+		if(steps == null){
+			steps = new ArrayList<CodeTemplateStep>();
+		}
 		return steps;
 	}
 	public void setSteps(List<CodeTemplateStep> steps) {
@@ -22,7 +26,7 @@ public class CodeTemplate {
 
 	
 	public void addCodeTemplateStep(CodeTemplateStep codeTemplateStep){
-		steps.add(codeTemplateStep);
+		getSteps().add(codeTemplateStep);
 	}
 	@Override
 	public String toString() {

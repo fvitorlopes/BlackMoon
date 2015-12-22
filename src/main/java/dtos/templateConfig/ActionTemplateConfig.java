@@ -26,6 +26,9 @@ public class ActionTemplateConfig {
 	}
 
 	public List<ElementTemplateConfig> getElements() {
+		if(elements == null){
+			elements = new ArrayList<ElementTemplateConfig>();
+		}
 		return elements;
 	}
 
@@ -50,11 +53,11 @@ public class ActionTemplateConfig {
 	}
 
 	public void removeElement(ElementTemplateConfig element) {
-		elements.remove(element);
+		getElements().remove(element);
 	}
 
 	public void addElement(ElementTemplateConfig element) {
-		elements.add(element);
+		getElements().add(element);
 	}
 
 	public ElementTemplateConfig searchElement(ElementSearchConfigEnum elementSearch) throws BlackMoonException{

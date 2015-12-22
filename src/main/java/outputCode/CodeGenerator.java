@@ -7,6 +7,7 @@ import dtos.templateConfig.ElementTemplateConfig;
 import dtos.templateConfig.TemplateConfig;
 import enums.ActionTemplateEnum;
 import enums.ElementSearchConfigEnum;
+import enums.SubstitutesEnum;
 import exceptions.BlackMoonException;
 
 public class CodeGenerator {
@@ -40,7 +41,7 @@ public class CodeGenerator {
 
 		CodeTemplate codeTemplate = new CodeTemplate();
 		codeTemplate.addCodeTemplateStep(
-				new CodeTemplateStep(ActionTemplateEnum.CLICK, ElementSearchConfigEnum.ID, "Salvar", ""));
+				new CodeTemplateStep(ActionTemplateEnum.CLICK, ElementSearchConfigEnum.ID, "", "Salvar"));
 
 		// do the actual method
 		for (CodeTemplateStep step : codeTemplate.getSteps()) {
@@ -49,10 +50,16 @@ public class CodeGenerator {
 					.getActionTemplateConfigByAction(step.getAction());
 			ElementTemplateConfig resultElementConfig = resultTemplateConfig.searchElement(step.getElement());
 
-			System.out.println(resultElementConfig.getSubstitute());
+			
+			String codeLine = resultTemplateConfig.getSubstitute();
+			codeLine = codeLine.replace(SubstitutesEnum.ELEMENT.getSubstitute(), resultElementConfig.getSubstitute());
+			codeLine = codeLine.replace(SubstitutesEnum.PROPERTY.getSubstitute(), step.getLocator());
+	
+			code = code + codeLine + System.lineSeparator();
 		}
 
 		code += templateConfig.getFooter();
+		System.out.println(code);
 		return code;
 	}
 

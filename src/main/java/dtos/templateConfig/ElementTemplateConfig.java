@@ -12,8 +12,6 @@ public class ElementTemplateConfig {
 	}
 	
 	
-	
-	
 	public ElementTemplateConfig(String substitute, ElementSearchConfigEnum elementSearch) {
 		super();
 		this.substitute = substitute;
