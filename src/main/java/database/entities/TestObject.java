@@ -30,5 +30,4 @@ public class TestObject {
 		this.properties = properties;
 	}
 
-	
 }

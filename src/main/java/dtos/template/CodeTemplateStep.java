@@ -11,9 +11,7 @@ public class CodeTemplateStep {
 	private String locator;
 	
 	public CodeTemplateStep() {
-		// TODO Auto-generated constructor stub
 	}
-	
 	
 	public CodeTemplateStep(ActionTemplateEnum action, ElementSearchConfigEnum element, String value, String locator) {
 		super();
