@@ -29,7 +29,10 @@ public class CodeGenerator {
 			String codeLine = resultTemplateConfig.getSubstitute();
 			codeLine = codeLine.replace(SubstitutesEnum.ELEMENT.getSubstitute(), resultElementConfig.getSubstitute());
 			codeLine = codeLine.replace(SubstitutesEnum.PROPERTY.getSubstitute(), step.getLocator());
-	
+			codeLine = codeLine.replace(SubstitutesEnum.VALUE.getSubstitute(), step.getValue());
+			
+			
+			
 			code = code + codeLine + System.lineSeparator();
 		}
 

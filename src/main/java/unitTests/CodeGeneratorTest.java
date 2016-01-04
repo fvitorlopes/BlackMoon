@@ -32,7 +32,7 @@ public class CodeGeneratorTest {
 			templateConfig.addAction(new ActionTemplateConfig("driver.findElement(<<element>>).click();",
 					ActionTemplateEnum.CLICK, null));
 
-			templateConfig.addAction(new ActionTemplateConfig("driver.findElement(<<element>>).click();",
+			templateConfig.addAction(new ActionTemplateConfig("driver.findElement(<<element>>).type(<<value>>);",
 					ActionTemplateEnum.TYPE, null));
 
 			
@@ -51,7 +51,7 @@ public class CodeGeneratorTest {
 			codeTemplate.setName("Selenium");
 		
 			codeTemplate.addCodeTemplateStep(new CodeTemplateStep(ActionTemplateEnum.CLICK,ElementSearchConfigEnum.ID, "value", "locator"));
-			codeTemplate.addCodeTemplateStep(new CodeTemplateStep(ActionTemplateEnum.TYPE,ElementSearchConfigEnum.ID, "value", "locator"));
+			codeTemplate.addCodeTemplateStep(new CodeTemplateStep(ActionTemplateEnum.TYPE,ElementSearchConfigEnum.ID, "mail@mail.com", "email"));
 
 			
 		} catch (Exception e) {

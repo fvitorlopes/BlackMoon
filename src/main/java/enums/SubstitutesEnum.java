@@ -2,7 +2,7 @@ package enums;
 
 public enum SubstitutesEnum {
 
-	ELEMENT("<<element>>"), PROPERTY("<<property>>"), VALOR("<<valor>>");
+	ELEMENT("<<element>>"), PROPERTY("<<property>>"), VALUE("<<value>>");
 
 	private String substitute;
 
