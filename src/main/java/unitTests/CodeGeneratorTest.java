@@ -23,9 +23,7 @@ public class CodeGeneratorTest {
 		TemplateConfig templateConfig = new TemplateConfig();
 		CodeTemplate codeTemplate = new CodeTemplate();
 		
-		
 		try {
-
 			templateConfig.setHeader("public class Selenium2Example  { public static void main(String[] args) { ");
 			templateConfig.setFooter("} }");
 
@@ -40,30 +38,33 @@ public class CodeGeneratorTest {
 			ElementTemplateConfig elementTemplateConfig = new ElementTemplateConfig("By.id(<<property>>)",
 					ElementSearchConfigEnum.ID);
 			resultATCClick.addElement(elementTemplateConfig);
-
-
+			
+			
 			ActionTemplateConfig resultATCType = templateConfig.getActionTemplateConfigByAction(ActionTemplateEnum.TYPE);
 			ElementTemplateConfig elementTemplateConfigType = new ElementTemplateConfig("By.idType(<<property>>)",
 					ElementSearchConfigEnum.ID);
 			resultATCType.addElement(elementTemplateConfigType);
-	
-		
+			
 			codeTemplate.setName("Selenium");
 		
 			codeTemplate.addCodeTemplateStep(new CodeTemplateStep(ActionTemplateEnum.CLICK,ElementSearchConfigEnum.ID, "value", "locator"));
 			codeTemplate.addCodeTemplateStep(new CodeTemplateStep(ActionTemplateEnum.TYPE,ElementSearchConfigEnum.ID, "mail@mail.com", "email"));
 
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		
 		try {
 			assertTrue(codeGenerator.generateCode(templateConfig,codeTemplate) != null);
 		} catch (Exception e) {
 			assertTrue(false);
 		}
-
-		// implementation of unity test
+		/*
+		Laws of software evolution revised 
+	
+		Mudança continua : Ao ponto em que um sistema evolui o mesmo se torna menos satisfatorio : quando um sistema evolui 
+	
+		 */
+		
 	}
 }
