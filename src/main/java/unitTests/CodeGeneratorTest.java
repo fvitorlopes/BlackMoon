@@ -59,12 +59,5 @@ public class CodeGeneratorTest {
 		} catch (Exception e) {
 			assertTrue(false);
 		}
-		/*
-		Laws of software evolution revised 
-	
-		Mudança continua : Ao ponto em que um sistema evolui o mesmo se torna menos satisfatorio : quando um sistema evolui 
-	
-		 */
-		
 	}
 }
