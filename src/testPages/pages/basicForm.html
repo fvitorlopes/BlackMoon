@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TestPage</title>
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+</head>
+<body>
+	<hr>
+	<div id="build">
+		<form id="target" class="form-horizontal">
+			<fieldset>
+				<div class="component"
+					data-content="<form role=&quot;form&quot;>
+    <div class=&quot;form-group&quot;>
+	<label class=&quot;col-md-12 control-label&quot;> Form Name </label>
+	<div class=&quot;col-md-10&quot;>
+		<input class='form-control field' data-type=&quot;input&quot; type='text' name='name' id='name' value ='Basic form' />
+	</div>
+</div>
+    <hr/>
+    <button id=&quot;save&quot; class='btn btn-info col-md-4'>Save</button>&amp;nbsp;<button id=&quot;cancel&quot; class='btn btn-danger'>Cancel</button>
+</form>
+"
+					data-title="Form Name" data-trigger="manual" data-html="true">
+					<!-- Form Name -->
+					<legend>Basic form</legend>
+				</div>
+				<div class="component"
+					data-content="<form role=&quot;form&quot;>
+      
+      
+    <div class=&quot;form-group&quot;>
+	<label class=&quot;col-md-12 control-label&quot;> ID / Name </label>
+	<div class=&quot;col-md-10&quot;>
+		<input class='form-control field' data-type=&quot;input&quot; type='text' name='id' id='id' value ='Text field' />
+	</div>
+</div><div class=&quot;form-group&quot;>
+	<label class=&quot;col-md-12 control-label&quot;> Label Text </label>
+	<div class=&quot;col-md-10&quot;>
+		<input class='form-control field' data-type=&quot;input&quot; type='text' name='label' id='label' value ='Text field' />
+	</div>
+</div><div class=&quot;form-group&quot;>
+	<label class=&quot;col-md-12 control-label&quot;> Placeholder </label>
+	<div class=&quot;col-md-10&quot;>
+		<input class='form-control field' data-type=&quot;input&quot; type='text' name='placeholder' id='placeholder' value ='' />
+	</div>
+</div><div class=&quot;form-group&quot;>
+	<label class=&quot;col-md-12 control-label&quot;> Help Text </label>
+	<div class=&quot;col-md-10&quot;>
+		<input class='form-control field' data-type=&quot;input&quot; type='text' name='helptext' id='helptext' value ='' />
+	</div>
+</div><div class=&quot;checkbox&quot;>
+	<label>
+	  <input type=&quot;checkbox&quot; data-type=&quot;checkbox&quot; class=&quot;field&quot; name=&quot;required&quot; id=&quot;required&quot;>
+	  Required
+	</label>
+</div>
+<div class=&quot;form-group&quot;>
+	<label class='col-md-4 control-label'> Input Size </label>
+	<div class=&quot;col-md-5&quot;>
+		<select class=&quot;form-control field&quot; data-type=&quot;select&quot; id='inputsize'>
+		
+		  <option value=&quot;col-md-1&quot;  >Mini</option>
+		
+		  <option value=&quot;col-md-2&quot;  >Small</option>
+		
+		  <option value=&quot;col-md-4&quot;  selected  >Medium</option>
+		
+		  <option value=&quot;col-md-5&quot;  >Large</option>
+		
+		  <option value=&quot;col-md-6&quot;  >Xlarge</option>
+		
+		  <option value=&quot;col-md-8&quot;  >Xxlarge</option>
+		
+		</select>
+	</div>
+</div>
+
+    <hr/>
+    <button id=&quot;save&quot; class='btn btn-info col-md-4'>Save</button>&amp;nbsp;<button id=&quot;cancel&quot; class='btn btn-danger'>Cancel</button>
+</form>
+"
+					data-title="Text Input" data-trigger="manual" data-html="true">
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="Text field">Text
+							field</label>
+						<div class="col-md-4">
+							<input id="Text field" name="Text field" type="text"
+								placeholder="" class="form-control input-md">
+
+						</div>
+					</div>
+				</div>
+				<div class="component"
+					data-content="<form role=&quot;form&quot;>
+      
+    <div class=&quot;form-group&quot;>
+	<label class=&quot;col-md-12 control-label&quot;> ID / Name </label>
+	<div class=&quot;col-md-10&quot;>
+		<input class='form-control field' data-type=&quot;input&quot; type='text' name='id' id='id' value ='Text field 2 ' />
+	</div>
+</div><div class=&quot;form-group&quot;>
+	<label class=&quot;col-md-12 control-label&quot;> Label Text </label>
+	<div class=&quot;col-md-10&quot;>
+		<input class='form-control field' data-type=&quot;input&quot; type='text' name='label' id='label' value ='Text field 2 ' />
+	</div>
+</div><div class=&quot;form-group&quot;>
+	<label class=&quot;col-md-12 control-label&quot;> Placeholder </label>
+	<div class=&quot;col-md-10&quot;>
+		<input class='form-control field' data-type=&quot;input&quot; type='text' name='placeholder' id='placeholder' value ='' />
+	</div>
+</div><div class=&quot;form-group&quot;>
+	<label class=&quot;col-md-12 control-label&quot;> Help Text </label>
+	<div class=&quot;col-md-10&quot;>
+		<input class='form-control field' data-type=&quot;input&quot; type='text' name='helptext' id='helptext' value ='' />
+	</div>
+</div><div class=&quot;checkbox&quot;>
+	<label>
+	  <input type=&quot;checkbox&quot; data-type=&quot;checkbox&quot; class=&quot;field&quot; name=&quot;required&quot; id=&quot;required&quot;>
+	  Required
+	</label>
+</div>
+<div class=&quot;form-group&quot;>
+	<label class='col-md-4 control-label'> Input Size </label>
+	<div class=&quot;col-md-5&quot;>
+		<select class=&quot;form-control field&quot; data-type=&quot;select&quot; id='inputsize'>
+		
+		  <option value=&quot;col-md-1&quot;  >Mini</option>
+		
+		  <option value=&quot;col-md-2&quot;  >Small</option>
+		
+		  <option value=&quot;col-md-4&quot;  >Medium</option>
+		
+		  <option value=&quot;col-md-5&quot;  selected  >Large</option>
+		
+		  <option value=&quot;col-md-6&quot;  >Xlarge</option>
+		
+		  <option value=&quot;col-md-8&quot;  >Xxlarge</option>
+		
+		</select>
+	</div>
+</div>
+
+    <hr/>
+    <button id=&quot;save&quot; class='btn btn-info col-md-4'>Save</button>&amp;nbsp;<button id=&quot;cancel&quot; class='btn btn-danger'>Cancel</button>
+</form>
+"
+					data-title="Text Input" data-trigger="manual" data-html="true">
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="Text field 2 ">Text
+							field 2 </label>
+						<div class="col-md-5">
+							<input id="Text field 2 " name="Text field 2 " type="text"
+								placeholder="" class="form-control input-md">
+
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<script type="js/javascript" src="bootstrap.js"></script>
+</body>
+</html>

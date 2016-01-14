@@ -11,21 +11,14 @@ public class ExtractorExample {
 		System.out.println("begin");
 		WebDriver driver = new FirefoxDriver();
 
-		driver.get("http://desenvolvimento/siop/");
+		driver.get("file:///C:/Users/fvitor/git/BlackMoon/src/testPages/pages/basicForm.html");
 
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(500);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
-		driver.findElement(By.cssSelector("img.siop_img_acesso_siop")).click();
-
-		try {
-			Thread.sleep(4000);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 		// read the page
 		// get forms
 		// read a field
