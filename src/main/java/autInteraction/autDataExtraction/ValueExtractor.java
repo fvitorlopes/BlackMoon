@@ -1,5 +1,5 @@
 package autInteraction.autDataExtraction;
 
-public class ToLabeler {
-	
+public class ValueExtractor {
+
 }

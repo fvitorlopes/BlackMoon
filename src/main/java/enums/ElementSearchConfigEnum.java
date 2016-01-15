@@ -1,5 +1,5 @@
 package enums;
 
 public enum ElementSearchConfigEnum {
-	ID,TITLE,LABEL
+	ID,TITLE,LABEL,CSS
 }

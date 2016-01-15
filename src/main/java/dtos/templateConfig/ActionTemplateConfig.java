@@ -100,6 +100,7 @@ public class ActionTemplateConfig {
 				return false;
 		} else if (!elements.equals(other.elements))
 			return false;
+	
 		if (substitute == null) {
 			if (other.substitute != null)
 				return false;
