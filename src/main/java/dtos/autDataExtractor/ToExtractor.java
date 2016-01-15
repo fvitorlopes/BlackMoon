@@ -8,10 +8,10 @@ public class ToExtractor {
 	// TODO : Change comparator to a list
 	private String name;
 	private ElementSearchConfigEnum elementSearch;
+	private ElementSearchConfigEnum elementComparator;
 	private String locator;
 	private String propertyExtractor;
 	private TOType toType;
-	
 	
 	public String getName() {
 		return name;
@@ -43,4 +43,11 @@ public class ToExtractor {
 	public void setToType(TOType toType) {
 		this.toType = toType;
 	}
+	public ElementSearchConfigEnum getElementComparator() {
+		return elementComparator;
+	}
+	public void setElementComparator(ElementSearchConfigEnum elementComparator) {
+		this.elementComparator = elementComparator;
+	}
+
 }

@@ -18,7 +18,7 @@ public class CodeGeneratorTest {
 	@Test
 	public void test() {
 		CodeGenerator codeGenerator = new CodeGenerator();
-
+		
 		// Template config test generation
 		TemplateConfig templateConfig = new TemplateConfig();
 		CodeTemplate codeTemplate = new CodeTemplate();

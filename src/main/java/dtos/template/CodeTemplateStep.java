@@ -14,7 +14,6 @@ public class CodeTemplateStep {
 	}
 	
 	public CodeTemplateStep(ActionTemplateEnum action, ElementSearchConfigEnum element, String value, String locator) {
-		
 		super();
 		this.action = action;
 		this.element = element;
