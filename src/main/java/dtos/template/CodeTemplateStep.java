@@ -12,7 +12,7 @@ public class CodeTemplateStep {
 	
 	public CodeTemplateStep() {
 	}
-	
+
 	public CodeTemplateStep(ActionTemplateEnum action, ElementSearchConfigEnum element, String value, String locator) {
 		super();
 		this.action = action;
@@ -24,19 +24,19 @@ public class CodeTemplateStep {
 	public ActionTemplateEnum getAction() {
 		return action;
 	}
-
+	
 	public void setAction(ActionTemplateEnum action) {
 		this.action = action;
 	}
-
+	
 	public ElementSearchConfigEnum getElement() {
 		return element;
 	}
-
+	
 	public void setElement(ElementSearchConfigEnum element) {
 		this.element = element;
 	}
-
+	
 	public String getValue() {
 		return value;
 	}
@@ -45,14 +45,12 @@ public class CodeTemplateStep {
 		this.value = value;
 	}
 
-
 	@Override
 	public String toString() {
 		return "CodeTemplateStep [action=" + action + ", element=" + element + ", value=" + value + ", locator="
 				+ locator + "]";
 	}
-
-
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -63,7 +61,6 @@ public class CodeTemplateStep {
 		result = prime * result + ((value == null) ? 0 : value.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -91,15 +88,12 @@ public class CodeTemplateStep {
 		return true;
 	}
 
-
 	public String getLocator() {
 		return locator;
 	}
-
 
 	public void setLocator(String locator) {
 		this.locator = locator;
 	}
 
-	
 }

@@ -14,7 +14,7 @@ import enums.ElementSearchConfigEnum;
 import outputCode.CodeGenerator;
 
 public class CodeGeneratorTest {
-
+	
 	@Test
 	public void test() {
 		CodeGenerator codeGenerator = new CodeGenerator();
@@ -32,13 +32,11 @@ public class CodeGeneratorTest {
 
 			templateConfig.addAction(new ActionTemplateConfig("driver.findElement(<<element>>).type(<<value>>);",
 					ActionTemplateEnum.TYPE, null));
-
 			
 			ActionTemplateConfig resultATCClick = templateConfig.getActionTemplateConfigByAction(ActionTemplateEnum.CLICK);
 			ElementTemplateConfig elementTemplateConfig = new ElementTemplateConfig("By.id(<<property>>)",
 					ElementSearchConfigEnum.ID);
 			resultATCClick.addElement(elementTemplateConfig);
-			
 			
 			ActionTemplateConfig resultATCType = templateConfig.getActionTemplateConfigByAction(ActionTemplateEnum.TYPE);
 			ElementTemplateConfig elementTemplateConfigType = new ElementTemplateConfig("By.idType(<<property>>)",
@@ -46,7 +44,7 @@ public class CodeGeneratorTest {
 			resultATCType.addElement(elementTemplateConfigType);
 			
 			codeTemplate.setName("Selenium");
-		
+			
 			codeTemplate.addCodeTemplateStep(new CodeTemplateStep(ActionTemplateEnum.CLICK,ElementSearchConfigEnum.ID, "value", "locator"));
 			codeTemplate.addCodeTemplateStep(new CodeTemplateStep(ActionTemplateEnum.TYPE,ElementSearchConfigEnum.ID, "mail@mail.com", "email"));
 

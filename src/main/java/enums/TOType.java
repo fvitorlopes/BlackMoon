@@ -8,7 +8,6 @@ public enum TOType {
 
 	private TOType(ActionTemplateEnum action){
 		this.action = action;
-		
 	}
 	
 	public ActionTemplateEnum getAction() {

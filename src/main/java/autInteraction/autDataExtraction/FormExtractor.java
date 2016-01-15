@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import dtos.autDataExtractor.ToExtractor;
 import dtos.autDataExtractor.ToSearchResult;
@@ -14,7 +12,8 @@ import dtos.template.CodeTemplateStep;
 import enums.ElementSearchConfigEnum;
 import enums.TOType;
 
-public class ExtractorExample {
+public class FormExtractor {
+	
 	// get the elements by extractor (in extractor , out ?)
 
 	// extract label and value (in ? , out value and label)
@@ -23,12 +22,22 @@ public class ExtractorExample {
 	// CodeTemplateStep(ActionTemplateEnum.CLICK,ElementSearchConfigEnum.ID,
 	// "value", "locator")
 
+	
+	public List<ToSearchResult> getFormElements(ToExtractor toExtractor){
+		List<ToSearchResult> toSearchResult = new ArrayList<ToSearchResult>();
+		if (toExtractor.getElementSearch().equals(ElementSearchConfigEnum.CSS)) {
+			for (WebElement webElement : DriverSingleton.getInstance().findElements(By.cssSelector(toExtractor.getLocator()))) {
+				toSearchResult.add(new ToSearchResult(toExtractor.getToType(), webElement));
+			}
+		}
+		return toSearchResult;
+	}
+	
 	public static void main(String[] args) {
 		System.out.println("begin");
-		WebDriver driver = new FirefoxDriver();
 
 		// get the element
-		driver.get("file:///C:/Users/fvitor/git/BlackMoon/src/testPages/pages/basicForm.html");
+		DriverSingleton.getInstance().get("file:///C:/Users/fvitor/git/BlackMoon/src/testPages/pages/basicForm.html");
 		
 		try {
 			Thread.sleep(1000);
@@ -42,12 +51,13 @@ public class ExtractorExample {
 		extractor.setLocator("input[type='text']");
 		extractor.setPropertyExtractor("value");
 		extractor.setToType(TOType.TEXT);
-
+		
+		
 		// method 1
 
 		List<ToSearchResult> toSearchResult = new ArrayList<ToSearchResult>();
 		if (extractor.getElementSearch().equals(ElementSearchConfigEnum.CSS)) {
-			for (WebElement webElement : driver.findElements(By.cssSelector(extractor.getLocator()))) {
+			for (WebElement webElement : DriverSingleton.getInstance().findElements(By.cssSelector(extractor.getLocator()))) {
 				toSearchResult.add(new ToSearchResult(extractor.getToType(), webElement));
 			}
 		}
@@ -78,13 +88,13 @@ public class ExtractorExample {
 		// new
 		// CodeTemplateStep(ActionTemplateEnum.CLICK,ElementSearchConfigEnum.ID,
 		// "value", "locator")
-		for (WebElement element : driver.findElements(By.cssSelector("input[type='text']"))) {
+		for (WebElement element : DriverSingleton.getInstance().findElements(By.cssSelector("input[type='text']"))) {
 			if (element.getAttribute("id").trim().equals("frmLogin:txtUsuario")) {
 				System.out.println("Value : " + element.getAttribute("value"));
 				System.out.println("");
 			}
 		}
-		driver.quit();
+		DriverSingleton.getInstance().quit();
 		System.out.println("end");
 	}
 }
