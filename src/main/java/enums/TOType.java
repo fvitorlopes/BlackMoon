@@ -2,7 +2,7 @@ package enums;
 
 public enum TOType {
 	
-	TEXT(ActionTemplateEnum.TYPE), PASSWORD(ActionTemplateEnum.TYPE), BUTTON(ActionTemplateEnum.CLICK);
+	TEXT(ActionTemplateEnum.TYPE), PASSWORD(ActionTemplateEnum.TYPE), BUTTON(ActionTemplateEnum.CLICK),SUBMIT(ActionTemplateEnum.CLICK);
 	
 	private ActionTemplateEnum action;
 
@@ -13,4 +13,5 @@ public enum TOType {
 	public ActionTemplateEnum getAction() {
 		return action;
 	}
+	
 }

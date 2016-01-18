@@ -31,8 +31,6 @@ public class CodeGenerator {
 			codeLine = codeLine.replace(SubstitutesEnum.PROPERTY.getSubstitute(), step.getLocator());
 			codeLine = codeLine.replace(SubstitutesEnum.VALUE.getSubstitute(), step.getValue());
 			
-			
-			
 			code = code + codeLine + System.lineSeparator();
 		}
 

@@ -33,8 +33,8 @@ public class FormExtractor {
 				codeTemplateStep.setAction(toExtractor.getToType().getAction());
 				for (String propertyScript : toResult.getExtractor().getPropertyScriptExtractor()) {
 					if (isAtributePresent(toResult.getWebElement(), propertyScript)) {
-						codeTemplateStep.setLocator(propertyScript);
-						codeTemplateStep.setValue(toResult.getWebElement().getAttribute(propertyScript));
+						codeTemplateStep.setLocator(toResult.getWebElement().getAttribute(propertyScript));
+						codeTemplateStep.setValue(new ValueExtractor().extractValue(toResult));
 						codeTemplateStep.setElement(elementSearchConvesor(propertyScript));
 						break;
 					}

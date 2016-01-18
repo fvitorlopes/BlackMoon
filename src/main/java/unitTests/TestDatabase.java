@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dtos.autDataExtractor.ToExtractor;
+import dtos.autDataExtractor.ToFormExtractor;
 import dtos.template.CodeTemplate;
 import dtos.template.CodeTemplateStep;
 import dtos.templateConfig.ActionTemplateConfig;
@@ -58,6 +59,13 @@ public class TestDatabase {
 		return codeTemplate;
 	}
 	
+	public ToFormExtractor getToFormExtractor(){
+		ToFormExtractor out = new ToFormExtractor();
+		out.addExtractor(getToExtractor());
+		out.addExtractor(getToExtractorButton());
+		return out;
+	}
+	
 	public ToExtractor getToExtractor(){
 		// go for database
 		ToExtractor extractor = new ToExtractor();
@@ -65,6 +73,21 @@ public class TestDatabase {
 		extractor.setLocator("input[type='text']");
 		extractor.setPropertyExtractor("value");
 		extractor.setToType(TOType.TEXT);
+		
+		List<String> propertyScriptExtraction = new ArrayList<String>();
+		propertyScriptExtraction.add("id");
+		extractor.setPropertyScriptExtractor(propertyScriptExtraction);
+
+		return extractor;
+	}
+
+	public ToExtractor getToExtractorButton(){
+		// go for database
+		ToExtractor extractor = new ToExtractor();
+		extractor.setElementSearch(ElementSearchConfigEnum.CSS);
+		extractor.setLocator("input[type='submit']");
+		extractor.setPropertyExtractor("value");
+		extractor.setToType(TOType.SUBMIT);
 		
 		List<String> propertyScriptExtraction = new ArrayList<String>();
 		propertyScriptExtraction.add("id");
