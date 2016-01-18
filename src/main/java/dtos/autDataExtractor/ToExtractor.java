@@ -1,8 +1,15 @@
 package dtos.autDataExtractor;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import enums.ElementSearchConfigEnum;
 import enums.TOType;
 
+/**
+ * @author fvitor
+ *
+ */
 public class ToExtractor {
 
 	// TODO : Change comparator to a list
@@ -12,6 +19,7 @@ public class ToExtractor {
 	private String locator;
 	private String propertyExtractor;
 	private TOType toType;
+	private List<String> propertyScriptExtractor = new ArrayList<String>();
 	
 	public String getName() {
 		return name;
@@ -49,5 +57,10 @@ public class ToExtractor {
 	public void setElementComparator(ElementSearchConfigEnum elementComparator) {
 		this.elementComparator = elementComparator;
 	}
-
+	public List<String> getPropertyScriptExtractor() {
+		return propertyScriptExtractor;
+	}
+	public void setPropertyScriptExtractor(List<String> propertyScriptExtractor) {
+		this.propertyScriptExtractor = propertyScriptExtractor;
+	}
 }
