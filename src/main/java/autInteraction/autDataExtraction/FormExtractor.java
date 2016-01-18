@@ -10,6 +10,7 @@ import dtos.autDataExtractor.ToExtractor;
 import dtos.autDataExtractor.ToSearchResult;
 import dtos.template.CodeTemplateStep;
 import enums.ElementSearchConfigEnum;
+import exceptions.BlackMoonException;
 
 public class FormExtractor {
 
@@ -34,6 +35,7 @@ public class FormExtractor {
 					if (isAtributePresent(toResult.getWebElement(), propertyScript)) {
 						codeTemplateStep.setLocator(propertyScript);
 						codeTemplateStep.setValue(toResult.getWebElement().getAttribute(propertyScript));
+						codeTemplateStep.setElement(elementSearchConvesor(propertyScript));
 						break;
 					}
 				}
@@ -46,7 +48,7 @@ public class FormExtractor {
 	
 	public static void main(String[] args) {
 		System.out.println("begin");
-
+	
 		// go for test
 		DriverSingleton.getInstance().get("file:///C:/Users/fvitor/git/BlackMoon/src/testPages/pages/basicForm.html");
 	
@@ -73,4 +75,16 @@ public class FormExtractor {
 		}
 		return result;
 	}
+
+
+	private ElementSearchConfigEnum elementSearchConvesor(String property) throws BlackMoonException{
+		ElementSearchConfigEnum elementReturn = null;
+		if(property.equals("id")){
+			elementReturn = ElementSearchConfigEnum.ID;
+		}else{
+			throw new BlackMoonException("Not possible convert element");
+		}
+		return elementReturn;
+	}
+
 }

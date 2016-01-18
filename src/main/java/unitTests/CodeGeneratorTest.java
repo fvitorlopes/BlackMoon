@@ -18,6 +18,7 @@ public class CodeGeneratorTest {
 		TemplateConfig templateConfig = testDatabase.getTemplateConfig();
 		CodeTemplate codeTemplate = testDatabase.getCodeTemplate();
 		
+		// System.out.println(codeTemplate);
 		
 		try {
 			assertTrue(codeGenerator.generateCode(templateConfig,codeTemplate) != null);
