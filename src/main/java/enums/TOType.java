@@ -13,5 +13,4 @@ public enum TOType {
 	public ActionTemplateEnum getAction() {
 		return action;
 	}
-	
 }

@@ -19,13 +19,15 @@ public class TestDatabase {
 	public TemplateConfig getTemplateConfig() {
 		TemplateConfig templateConfig = new TemplateConfig();
 
-		templateConfig.setHeader("public class Selenium2Example  { public static void main(String[] args) { ");
-		templateConfig.setFooter("} }");
+		String newline = System.getProperty("line.separator");
+		
+		templateConfig.setHeader("public class Selenium2Example { " + newline + newline + "    public static void main(String[] args) { " +newline);
+		templateConfig.setFooter("    }"+newline+"}");
 
 		templateConfig.addAction(
-				new ActionTemplateConfig("driver.findElement(<<element>>).click();", ActionTemplateEnum.CLICK, null));
+				new ActionTemplateConfig(newline +"        driver.findElement(<<element>>).click();" + newline, ActionTemplateEnum.CLICK, null));
 
-		templateConfig.addAction(new ActionTemplateConfig("driver.findElement(<<element>>).type(<<value>>);",
+		templateConfig.addAction(new ActionTemplateConfig(newline +"        driver.findElement(<<element>>).type(<<value>>);",
 				ActionTemplateEnum.TYPE, null));
 		try {
 
