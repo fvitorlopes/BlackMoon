@@ -6,7 +6,7 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 
 public class ToFormExtractor {
-
+	// Ok for entity
 	private List<ToExtractor> toExtractors = new ArrayList<ToExtractor>();
 	private WebElement form;
 

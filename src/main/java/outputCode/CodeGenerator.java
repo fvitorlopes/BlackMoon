@@ -18,9 +18,7 @@ public class CodeGenerator {
 		String code = "";
 		code += templateConfig.getHeader();
 		
-		
 		for (CodeTemplateStep step : codeTemplate.getSteps()) {
-			// for each step generate the code
 			ActionTemplateConfig resultTemplateConfig = templateConfig
 					.getActionTemplateConfigByAction(step.getAction());
 			ElementTemplateConfig resultElementConfig = resultTemplateConfig.searchElement(step.getElement());

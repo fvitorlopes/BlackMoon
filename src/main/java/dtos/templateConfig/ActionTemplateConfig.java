@@ -17,7 +17,7 @@ public class ActionTemplateConfig {
 	public ActionTemplateConfig() {
 		// TODO Auto-generated constructor stub
 	}
-
+	
 	public ActionTemplateConfig(String substitute, ActionTemplateEnum action, List<ElementTemplateConfig> elements) {
 		super();
 		this.substitute = substitute;

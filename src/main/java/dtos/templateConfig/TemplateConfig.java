@@ -6,12 +6,13 @@ import java.util.List;
 import enums.ActionTemplateEnum;
 import exceptions.BlackMoonException;
 
+// OK for entity
 public class TemplateConfig {
-	
+
 	private String header;
 	private String footer;
 	private List<ActionTemplateConfig> actions = new ArrayList<ActionTemplateConfig>();
-
+	
 	public String getHeader() {
 		return header;
 	}

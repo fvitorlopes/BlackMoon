@@ -3,21 +3,18 @@ package dtos.templateConfig;
 import enums.ElementSearchConfigEnum;
 
 public class ElementTemplateConfig {
+
 	private String substitute;
 	private ElementSearchConfigEnum elementSearch;
-	
-	
+
 	public ElementTemplateConfig() {
-		// TODO Auto-generated constructor stub
 	}
-	
-	
+
 	public ElementTemplateConfig(String substitute, ElementSearchConfigEnum elementSearch) {
 		super();
 		this.substitute = substitute;
 		this.elementSearch = elementSearch;
 	}
-
 
 	public String getSubstitute() {
 		return substitute;
@@ -35,9 +32,6 @@ public class ElementTemplateConfig {
 		this.elementSearch = elementSearch;
 	}
 
-
-
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -46,9 +40,6 @@ public class ElementTemplateConfig {
 		result = prime * result + ((substitute == null) ? 0 : substitute.hashCode());
 		return result;
 	}
-
-
-
 
 	@Override
 	public boolean equals(Object obj) {

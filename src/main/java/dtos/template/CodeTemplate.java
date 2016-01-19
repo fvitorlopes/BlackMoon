@@ -5,9 +5,10 @@ import java.util.List;
 
 public class CodeTemplate {
 	
+	// OK : for entity
 	private String name;
 	private List<CodeTemplateStep> steps = new ArrayList<CodeTemplateStep>();
-
+	
 	public String getName() {
 		return name;
 	}
