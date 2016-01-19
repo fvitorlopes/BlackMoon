@@ -5,12 +5,10 @@ import org.openqa.selenium.WebElement;
 import enums.TOType;
 
 public class ToSearchResult {
-
 	private TOType toType;
 	private WebElement webElement;
 	private String value;
 	private ToExtractor extractor;
-
 	
 	public TOType getToType() {
 		return toType;

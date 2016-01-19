@@ -7,7 +7,7 @@ import enums.ActionTemplateEnum;
 import exceptions.BlackMoonException;
 
 public class TemplateConfig {
-
+	
 	private String header;
 	private String footer;
 	private List<ActionTemplateConfig> actions = new ArrayList<ActionTemplateConfig>();
@@ -94,6 +94,4 @@ public class TemplateConfig {
 			return false;
 		return true;
 	}
-
-
 }

@@ -49,9 +49,8 @@ public class FormExtractor {
 	public static void main(String[] args) {
 		System.out.println("begin");
 	
-		// go for test
+		// Windows
 		DriverSingleton.getInstance().get("file:///C:/Users/fvitor/git/BlackMoon/src/testPages/pages/basicForm.html");
-	
 		
 		try {
 			Thread.sleep(1000);

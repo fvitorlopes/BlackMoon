@@ -15,7 +15,9 @@ import enums.ElementSearchConfigEnum;
 import enums.TOType;
 
 public class TestDatabase {
-
+	// Template config
+	
+	
 	public TemplateConfig getTemplateConfig() {
 		TemplateConfig templateConfig = new TemplateConfig();
 

@@ -21,7 +21,7 @@ public class FieldExtractionTest {
 	@Test
 	public void test() {
 		TestDatabase testDatabase = new TestDatabase();
-
+	
 		CodeGenerator codeGenerator = new CodeGenerator();
 		FormExtractor formExtractor = new FormExtractor();
 		TemplateConfig templateConfig = testDatabase.getTemplateConfig();
@@ -39,14 +39,12 @@ public class FieldExtractionTest {
 		for (ToExtractor toE : toFormExtractor.getToExtractors()) {
 			List<ToSearchResult> result = formExtractor.getFormTestObjects(toE);
 			CodeTemplateStep codeTemplateStep = formExtractor.generateCodeTemplate(result, toE);
-
+			
 			codeTemplate.addCodeTemplateStep(codeTemplateStep);
-		}
-	
-		try {
+		}try {
 			assertTrue(codeGenerator.generateCode(templateConfig, codeTemplate) != null);
 		} catch (Exception e) {
 			assertTrue(false);
-		}
+		} 
 	}
 }

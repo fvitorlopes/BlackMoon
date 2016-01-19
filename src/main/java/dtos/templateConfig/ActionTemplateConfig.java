@@ -8,7 +8,7 @@ import enums.ElementSearchConfigEnum;
 import exceptions.BlackMoonException;
 
 public class ActionTemplateConfig {
-
+		
 	// one of those for each command
 	private String substitute;
 	private ActionTemplateEnum action;
@@ -108,6 +108,4 @@ public class ActionTemplateConfig {
 			return false;
 		return true;
 	}
-	
-	
 }

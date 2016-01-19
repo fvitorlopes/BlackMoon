@@ -31,7 +31,6 @@ public class ToFormExtractor {
 	}
 
 	public ToFormExtractor() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public ToFormExtractor(List<ToExtractor> toExtractors, WebElement form) {
