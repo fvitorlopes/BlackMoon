@@ -3,9 +3,8 @@ package dtos.template;
 import enums.ActionTemplateEnum;
 import enums.ElementSearchConfigEnum;
 
-// OK : for entity
 public class CodeTemplateStep {
-
+	
 	private ActionTemplateEnum action;
 	private ElementSearchConfigEnum element;
 	private String value;
@@ -14,7 +13,7 @@ public class CodeTemplateStep {
 	public CodeTemplateStep() {
 		
 	}
-
+	
 	public CodeTemplateStep(ActionTemplateEnum action, ElementSearchConfigEnum element, String value, String locator) {
 		super();
 		this.action = action;
@@ -97,5 +96,4 @@ public class CodeTemplateStep {
 	public void setLocator(String locator) {
 		this.locator = locator;
 	}
-
 }
