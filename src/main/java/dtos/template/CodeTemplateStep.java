@@ -92,7 +92,7 @@ public class CodeTemplateStep {
 	public String getLocator() {
 		return locator;
 	}
-
+	
 	public void setLocator(String locator) {
 		this.locator = locator;
 	}

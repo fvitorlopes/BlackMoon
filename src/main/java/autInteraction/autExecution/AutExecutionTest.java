@@ -10,6 +10,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import autInteraction.autDataExtraction.DriverSingleton;
+import autInteraction.autDataExtraction.PageFieldExtractor;
+import dtos.pageInteraction.PageContext;
+import dtos.pageInteraction.PageEntity;
+import dtos.pageInteraction.PageField;
 
 public class AutExecutionTest {
 	// to into siop
@@ -47,10 +51,22 @@ public class AutExecutionTest {
 		// Extract entities from menu 
 		System.out.println("entities : " + getEntities());
 		
+		PageContext pageContext = new PageContext();
+		PageEntity pageEntity = new PageEntity();
+		pageEntity.setName("Usuário");
+		pageContext.setPageEntity(pageEntity);
+		
+		PageFieldExtractor pageFieldExtractor = new PageFieldExtractor();
 		// Automatic login
 		while (true) {
 			JOptionPane.showConfirmDialog(null, "go");
-			System.out.println(getNameElements());
+			for(PageField pageField : pageFieldExtractor.getPageFields()){
+				System.out.println("Name : " + pageField.getName());
+				System.out.println("Value : " + pageField.getValue());
+				System.out.println("=======================================");
+			}
+			
+			
 		}
 	}
 
