@@ -3,8 +3,6 @@ package autInteraction.autDataExtraction;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.cyberneko.html.HTMLElements.Element;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import enums.TOType;
@@ -12,28 +10,35 @@ import exceptions.BlackMoonException;
 
 public class NameExtractor {
 
-	
-	
+	private ToExtractionUtil toExtractor = new ToExtractionUtil();
+	private WebElement foundWebElement;
+	private ToTypeIdentifier toIdentifer = new ToTypeIdentifier();
+	private WebElement actualParent;
+
 	// TODO : implement label
 	public String extractName(WebElement webElement) throws BlackMoonException {
-		ToTypeIdentifier toIdentifer = new ToTypeIdentifier();
-		
+
 		switch (toIdentifer.identifyTO(webElement)) {
 		case BUTTON:
 			return getInputButtonName(webElement);
 		case TEXT:
 			return getInputTextName(webElement);
-
 		default:
 			throw new BlackMoonException("Name of the element not found");
 		}
 	}
 
-		
-	private String getInputTextName(WebElement webElement) {
-		return getExternalLabelNameElement(webElement, TOType.TEXT);
+	private String getInputTextName(WebElement webElement) throws BlackMoonException {
+		String labelName = "";
+		try {
+			labelName = getExternalLabelNameElement(webElement).getText();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			// TODO: silenced for test
+		}
+		return labelName;
 	}
-	
+
 	private String getInputButtonName(WebElement webElement) {
 		List<String> parameters = new ArrayList<String>();
 		parameters.add("value");
@@ -51,20 +56,44 @@ public class NameExtractor {
 		return out;
 	}
 
-	private boolean isAttribtuePresent(WebElement element, String attribute) {
-		Boolean result = false;
-		try {
-			String value = element.getAttribute(attribute);
-			if (value != null) {
-				result = true;
-			}
-		} catch (Exception e) {// Silenced for element not found
+	private WebElement getParentElement(WebElement element) {
+		if (actualParent == null) {
+			return toExtractor.getParent(element);
+		} else {
+			return toExtractor.getParent(actualParent);
 		}
-		return result;
 	}
 	
-	private String getExternalLabelNameElement(WebElement element , TOType typeElement){
+	private WebElement getExternalLabelNameElement(WebElement webElement) throws BlackMoonException {
+		System.out.println("Source webElement " + toExtractor.getSource(webElement));
 		
+		for (int i = 0; i < 3; i++) {
+			actualParent = getParentElement(webElement);
+			System.out.println("Souce parent " + toExtractor.getSource(actualParent));
+
+			
+			WebElement foundLabel = getRecursiveLabel(actualParent);
+			if (foundLabel != null) {
+				return foundLabel;
+			}
+		}
 		return null;
+		// throw new BlackMoonException("Label of object could not be found");
+	}
+	
+	public WebElement getRecursiveLabel(WebElement webElement) throws BlackMoonException {
+		for (WebElement internalWebElement : toExtractor.getChildren(webElement)) {
+			System.out.println("Internal web element  " + toExtractor.getSource(internalWebElement));
+			
+			if (foundWebElement != null) {
+				break;
+			}
+			if (toIdentifer.isType(internalWebElement, TOType.LABEL)) {
+				foundWebElement = internalWebElement;
+			} else if (!toExtractor.getChildren(internalWebElement).isEmpty()) {
+				getRecursiveLabel(internalWebElement);
+			}
+		}
+		return foundWebElement;
 	}
 }

@@ -62,7 +62,7 @@ public class CodeTemplateStep {
 		result = prime * result + ((value == null) ? 0 : value.hashCode());
 		return result;
 	}
-
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -88,7 +88,7 @@ public class CodeTemplateStep {
 			return false;
 		return true;
 	}
-
+	
 	public String getLocator() {
 		return locator;
 	}

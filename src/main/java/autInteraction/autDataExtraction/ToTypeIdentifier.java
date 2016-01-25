@@ -3,24 +3,30 @@ package autInteraction.autDataExtraction;
 import org.openqa.selenium.WebElement;
 
 import enums.TOType;
+import exceptions.BlackMoonException;
 
 public class ToTypeIdentifier {
 
 	private ToExtractionUtil toExtraction = new ToExtractionUtil();
 
-	public boolean isType (WebElement webElement , TOType toType){
-		return identifyTO(webElement).equals(toType);
+	public boolean isType (WebElement webElement , TOType toType) throws BlackMoonException{
+		if(webElement == null){
+			return false;
+		}else{
+			return identifyTO(webElement).equals(toType);
+		}
 	}
-	public TOType identifyTO(WebElement webElement){
+	public TOType identifyTO(WebElement webElement) throws BlackMoonException{
 		if (isInput(webElement)) {
 			if (isSubmitButton(webElement)) {
 				return TOType.SUBMIT;
 			} else if (isTextField(webElement)) {
 				return TOType.TEXT;
 			}
+		}else if (isLabel(webElement)) {
+			return TOType.LABEL;
 		}
-		
-		return null;
+		throw new BlackMoonException("WebElement could not be categorized");
 	}
 	private boolean isSubmitButton(WebElement webElement){
 		return toExtraction.verifyAttribute("type", "submit", webElement);
@@ -30,8 +36,12 @@ public class ToTypeIdentifier {
 		return toExtraction.verifyAttribute("type", "text", webElement);
 	}
 
-	
 	private boolean isInput(WebElement webElement){
 		return webElement.getTagName().equals("input");
 	}
+	
+	private boolean isLabel(WebElement webElement){
+		return webElement.getTagName().equals("label");
+	}
+
 }

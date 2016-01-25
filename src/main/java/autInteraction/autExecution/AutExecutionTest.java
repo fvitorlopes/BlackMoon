@@ -3,13 +3,12 @@ package autInteraction.autExecution;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.JOptionPane;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import autInteraction.autDataExtraction.DriverSingleton;
+import autInteraction.autDataExtraction.NameExtractor;
 import autInteraction.autDataExtraction.PageFieldExtractor;
 import dtos.pageInteraction.PageContext;
 import dtos.pageInteraction.PageEntity;
@@ -21,11 +20,11 @@ public class AutExecutionTest {
 		AutExecutionTest autExecutionTest = new AutExecutionTest();
 		autExecutionTest.doTest();
 	}
-
+	
 	public void doTest() {
 		// Start Browser
 		DriverSingleton.getInstance().get("https://testes/siop/?pp=siop&rvn=1");
-		//
+	
 		DriverSingleton.getInstance().findElement(By.cssSelector("img.siop_img_acesso_siop")).click();
 		DriverSingleton.getInstance().findElement(By.id("frmLogin:txtUsuario")).clear();
 		DriverSingleton.getInstance().findElement(By.id("frmLogin:txtUsuario")).sendKeys("053.337.412-04");
@@ -51,24 +50,33 @@ public class AutExecutionTest {
 		// Extract entities from menu 
 		System.out.println("entities : " + getEntities());
 		
-		PageContext pageContext = new PageContext();
-		PageEntity pageEntity = new PageEntity();
-		pageEntity.setName("Usuário");
-		pageContext.setPageEntity(pageEntity);
+//		PageContext pageContext = new PageContext();
+//		PageEntity pageEntity = new PageEntity();
+//		pageEntity.setName("Usuário");
+//		pageContext.setPageEntity(pageEntity);
+
 		
-		PageFieldExtractor pageFieldExtractor = new PageFieldExtractor();
+//		PageFieldExtractor pageFieldExtractor = new PageFieldExtractor();
 		// Automatic login
-		while (true) {
-			try {
-//				JOptionPane.showConfirmDialog(null, "go");
-				for(PageField pageField : pageFieldExtractor.getPageFields()){
-					System.out.println("Name : " + pageField.getName());
-					System.out.println("Value : " + pageField.getValue());
-					System.out.println("=======================================");
-				}			
-			} catch (Exception e) {
-				// Manage the error
-			}
+//		while (true) {
+//			try {
+////				JOptionPane.showConfirmDialog(null, "go");
+//				for(PageField pageField : pageFieldExtractor.getPageFields()){
+//					System.out.println("Name : " + pageField.getName());
+//					System.out.println("Value : " + pageField.getValue());
+//					System.out.println("=======================================");
+//				}			
+//			} catch (Exception e) {
+//				// Manage the error
+//			}
+//		}
+	
+		try {
+		WebElement textField = DriverSingleton.getInstance().findElement(By.id("form:textoNomeFiltro"));
+		NameExtractor nameExtractor = new NameExtractor();
+		String name =  nameExtractor.extractName(textField);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
 		}
 	}
 	

@@ -1,5 +1,8 @@
 package autInteraction.autDataExtraction;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class ToExtractionUtil {
@@ -18,5 +21,21 @@ public class ToExtractionUtil {
 		} catch (Exception e) {// Silenced for element not found
 		}
 		return result;
+	}
+
+	public WebElement getParent(WebElement webElement){
+		return webElement.findElement(By.xpath(".."));
+	}
+	
+	public List<WebElement> getChildren(WebElement webElement){
+		return webElement.findElements(By.xpath(".//*"));
+	}
+
+	public List<WebElement> getDescendant(WebElement webElement){
+		return webElement.findElements(By.xpath(".//*"));
+	}
+
+	public String getSource(WebElement webElement){
+		return webElement.getAttribute("outerHTML");
 	}
 }
