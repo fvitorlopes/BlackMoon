@@ -37,7 +37,7 @@ public class AutExecutionTest {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-
+		
 		new Select(DriverSingleton.getInstance().findElement(By.id("frmLogin:selPerfilsiop")))
 				.selectByVisibleText("Administrador");
 		DriverSingleton.getInstance().findElement(By.id("frmLogin:botaoPerfil")).click();
@@ -59,17 +59,19 @@ public class AutExecutionTest {
 		PageFieldExtractor pageFieldExtractor = new PageFieldExtractor();
 		// Automatic login
 		while (true) {
-			JOptionPane.showConfirmDialog(null, "go");
-			for(PageField pageField : pageFieldExtractor.getPageFields()){
-				System.out.println("Name : " + pageField.getName());
-				System.out.println("Value : " + pageField.getValue());
-				System.out.println("=======================================");
+			try {
+//				JOptionPane.showConfirmDialog(null, "go");
+				for(PageField pageField : pageFieldExtractor.getPageFields()){
+					System.out.println("Name : " + pageField.getName());
+					System.out.println("Value : " + pageField.getValue());
+					System.out.println("=======================================");
+				}			
+			} catch (Exception e) {
+				// Manage the error
 			}
-			
-			
 		}
 	}
-
+	
 	public WebElement searchMenu() {
 		return DriverSingleton.getInstance().findElement(By.cssSelector("ul.siop_menu_principal_lista"));
 	}

@@ -4,16 +4,16 @@ import enums.ActionTemplateEnum;
 import enums.ElementSearchConfigEnum;
 
 public class CodeTemplateStep {
-	
+
 	private ActionTemplateEnum action;
 	private ElementSearchConfigEnum element;
 	private String value;
 	private String locator;
-	
+
 	public CodeTemplateStep() {
-		
+
 	}
-	
+
 	public CodeTemplateStep(ActionTemplateEnum action, ElementSearchConfigEnum element, String value, String locator) {
 		super();
 		this.action = action;
@@ -21,23 +21,23 @@ public class CodeTemplateStep {
 		this.value = value;
 		this.locator = locator;
 	}
-	
+
 	public ActionTemplateEnum getAction() {
 		return action;
 	}
-	
+
 	public void setAction(ActionTemplateEnum action) {
 		this.action = action;
 	}
-	
+
 	public ElementSearchConfigEnum getElement() {
 		return element;
 	}
-	
+
 	public void setElement(ElementSearchConfigEnum element) {
 		this.element = element;
 	}
-	
+
 	public String getValue() {
 		return value;
 	}
@@ -92,7 +92,7 @@ public class CodeTemplateStep {
 	public String getLocator() {
 		return locator;
 	}
-	
+
 	public void setLocator(String locator) {
 		this.locator = locator;
 	}

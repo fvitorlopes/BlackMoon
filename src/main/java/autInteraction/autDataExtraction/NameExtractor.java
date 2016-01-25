@@ -3,20 +3,37 @@ package autInteraction.autDataExtraction;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.cyberneko.html.HTMLElements.Element;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class NameExtractor {
-	public String extractName(WebElement webElement) {
-		// is input
-		if (webElement.getTagName().equals("input")) {
-			if (isAttribtuePresent(webElement, "type") && webElement.getAttribute("type").equals("submit")) {
-				return getInputButtonName(webElement);
-			}
-		}
+import enums.TOType;
+import exceptions.BlackMoonException;
 
-		return null;
+public class NameExtractor {
+
+	
+	
+	// TODO : implement label
+	public String extractName(WebElement webElement) throws BlackMoonException {
+		ToTypeIdentifier toIdentifer = new ToTypeIdentifier();
+		
+		switch (toIdentifer.identifyTO(webElement)) {
+		case BUTTON:
+			return getInputButtonName(webElement);
+		case TEXT:
+			return getInputTextName(webElement);
+
+		default:
+			throw new BlackMoonException("Name of the element not found");
+		}
 	}
 
+		
+	private String getInputTextName(WebElement webElement) {
+		return getExternalLabelNameElement(webElement, TOType.TEXT);
+	}
+	
 	private String getInputButtonName(WebElement webElement) {
 		List<String> parameters = new ArrayList<String>();
 		parameters.add("value");
@@ -41,10 +58,13 @@ public class NameExtractor {
 			if (value != null) {
 				result = true;
 			}
-		} catch (Exception e) {
+		} catch (Exception e) {// Silenced for element not found
 		}
-
 		return result;
 	}
-
+	
+	private String getExternalLabelNameElement(WebElement element , TOType typeElement){
+		
+		return null;
+	}
 }
