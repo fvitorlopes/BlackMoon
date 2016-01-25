@@ -17,8 +17,7 @@ public class FormExtractor {
 	public List<ToSearchResult> getFormTestObjects(ToExtractor extractor){
 		List<ToSearchResult> toSearchResult = new ArrayList<ToSearchResult>();
 		if (extractor.getElementSearch().equals(ElementSearchConfigEnum.CSS)) {
-			for (WebElement webElement : DriverSingleton.getInstance()
-					.findElements(By.cssSelector(extractor.getLocator()))) {
+			for (WebElement webElement : DriverSingleton.findElements(By.cssSelector(extractor.getLocator()))) {
 				toSearchResult.add(new ToSearchResult(extractor.getToType(), webElement, extractor));
 			}
 		}

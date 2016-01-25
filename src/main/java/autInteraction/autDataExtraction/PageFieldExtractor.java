@@ -35,7 +35,7 @@ public class PageFieldExtractor {
 	// Implement search by label
 	private List<PageField> listPageFields(By by) throws BlackMoonException{
 		List<PageField> out = new ArrayList<PageField>();
-		for(WebElement webElement : DriverSingleton.getInstance().findElements(by)){
+		for(WebElement webElement : DriverSingleton.findElements(by)){
 			String elementName = nameExtractor.extractName(webElement);
 			out.add(new PageField(elementName, ""));
 		}

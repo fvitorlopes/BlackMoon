@@ -9,10 +9,6 @@ import org.openqa.selenium.support.ui.Select;
 
 import autInteraction.autDataExtraction.DriverSingleton;
 import autInteraction.autDataExtraction.NameExtractor;
-import autInteraction.autDataExtraction.PageFieldExtractor;
-import dtos.pageInteraction.PageContext;
-import dtos.pageInteraction.PageEntity;
-import dtos.pageInteraction.PageField;
 
 public class AutExecutionTest {
 	// to into siop
