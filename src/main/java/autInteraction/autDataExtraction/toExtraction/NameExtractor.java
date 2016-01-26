@@ -35,7 +35,6 @@ public class NameExtractor {
 		try {
 			labelName = getExternalLabelNameElement(webElement).getText();
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
 			// TODO: silenced for test
 		}
 		return labelName;
@@ -84,12 +83,8 @@ public class NameExtractor {
 	}
 	
 	private WebElement getExternalLabelNameElement(WebElement webElement) throws BlackMoonException {
-		System.out.println("Source webElement " + toExtractor.getSource(webElement));
-		
 		for (int i = 0; i < 2; i++) {
 			actualParent = getParentElement(webElement);
-			System.out.println("Souce parent " + toExtractor.getSource(actualParent));
-
 			
 			WebElement foundLabel = getRecursiveLabel(actualParent);
 			if (foundLabel != null) {
@@ -102,7 +97,6 @@ public class NameExtractor {
 	
 	public WebElement getRecursiveLabel(WebElement webElement) throws BlackMoonException {
 		for (WebElement internalWebElement : toExtractor.getChildren(webElement)) {
-			System.out.println("Internal web element  " + toExtractor.getSource(internalWebElement));
 			
 			if (foundWebElement != null) {
 				break;

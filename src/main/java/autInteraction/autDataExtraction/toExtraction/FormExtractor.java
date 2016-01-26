@@ -46,7 +46,6 @@ public class FormExtractor {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("begin");
 	
 		// Windows
 		DriverSingleton.getInstance().get("file:///C:/Users/fvitor/git/BlackMoon/src/testPages/pages/basicForm.html");
@@ -58,7 +57,6 @@ public class FormExtractor {
 		}
 		
 		DriverSingleton.getInstance().quit();
-		System.out.println("end");
 	}
 
 	private boolean isAtributePresent(WebElement webElement, String attribute) {
