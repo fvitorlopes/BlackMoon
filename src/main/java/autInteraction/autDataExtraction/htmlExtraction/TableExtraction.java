@@ -11,9 +11,12 @@ import autInteraction.autDataExtraction.toExtraction.DriverSingleton;
 public class TableExtraction {
 	// TODO : do find table also
 
-	public TableEntity extractTable(WebElement tableElement) {
+	public TableEntity extractTable(WebElement table) {
 		TableEntity tableEntity = new TableEntity();
-
+		tableEntity.setTableElement(table);
+		tableEntity.setTableLines(getLinesTable(table));
+		tableEntity.setHeaders(getHeadersTable(table));
+		tableEntity.setTableColumns(getColumns(table));
 		return tableEntity;
 	}
 
@@ -26,13 +29,13 @@ public class TableExtraction {
 		DriverSingleton.getInstance().get("file:///C:/Users/fvitor/git/BlackMoon/src/testPages/pages/basicTable.html");
 
 		WebElement table = DriverSingleton.findElement(By.id("tabelaExemplo"));
-		System.out.println(getHeadersTable(table));
-		// get the element
-
+		extractTable(table);
+		
 	}
 
+	
 	// TODO : consider tables without thead and tbody
-	public List<String> getHeadersTable(WebElement table) {
+	private List<String> getHeadersTable(WebElement table) {
 		List<String> out = new ArrayList<String>();
 		WebElement header = table.findElement(By.tagName("thead"));
 		for (WebElement thHeadTable : header.findElements(By.tagName("th"))) {
@@ -41,18 +44,37 @@ public class TableExtraction {
 		return out;
 	}
 
-	public List<TableLineEntity> getLinesTable(WebElement table) {
+	private List<TableLineEntity> getLinesTable(WebElement table) {
 		List<TableLineEntity> out = new ArrayList<TableLineEntity>();
 		WebElement header = table.findElement(By.tagName("tbody"));
 
 		for (WebElement thHeadTable : header.findElements(By.tagName("tr"))) {
 			TableLineEntity tableLineEntity = new TableLineEntity();
-			for (WebElement tdHeadTable : header.findElements(By.tagName("td"))) {
+			for (WebElement tdHeadTable : thHeadTable.findElements(By.tagName("td"))) {
 				tableLineEntity.addValue(tdHeadTable.getText());
 			}
 			out.add(tableLineEntity);
 		}
 		return out;
+	}
+
+	private List<TableColumn> getColumns(WebElement table) {
+		List<TableColumn> tableColumns = new ArrayList<TableColumn>();
+		List<String> tableHeaders = getHeadersTable(table);
+		List<TableLineEntity> tablesLines = getLinesTable(table);
+
+		for (String header : tableHeaders) {
+			TableColumn tableColumn = new TableColumn();
+			tableColumn.setName(header);
+
+			for (TableLineEntity line : tablesLines) {
+				String contentCell = line.getValues().get(tableHeaders.indexOf(header));
+				tableColumn.addValue(contentCell);
+			}
+			tableColumns.add(tableColumn);
+		}
+
+		return tableColumns;
 	}
 
 }
