@@ -10,7 +10,8 @@ public class TableEntity {
 	private WebElement tableElement;
 	private String source;
 	private List<TableEntityValue> entityValues = new ArrayList<TableEntityValue>();
-
+	private List<TableLineEntity> tableLines = new ArrayList<TableLineEntity>();
+	
 	public WebElement getTableElement() {
 		return tableElement;
 	}
@@ -38,12 +39,20 @@ public class TableEntity {
 	public TableEntity() {
 	
 	}
-
+	
 	public TableEntity(WebElement tableElement, String source, List<TableEntityValue> entityValues) {
 		super();
 		this.tableElement = tableElement;
 		this.source = source;
 		this.entityValues = entityValues;
+	}
+	
+	public List<TableLineEntity> getTableLines() {
+		return tableLines;
+	}
+	
+	public void setTableLines(List<TableLineEntity> tableLines) {
+		this.tableLines = tableLines;
 	}
 	
 }

@@ -1,6 +1,9 @@
 package unitTests;
 
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import autInteraction.autDataExtraction.toExtraction.DriverSingleton;
 import autInteraction.autDataExtraction.toExtraction.PageFieldExtractor;
@@ -12,9 +15,11 @@ public class ToExtractionTest {
 	
 	@Test
 	public void test() {
-		
+
 		DriverSingleton.getInstance().get("file:///C:/Users/fvitor/git/BlackMoon/src/testPages/pages/basicForm.html");
-	
+		WebElement tabelaExemplo = DriverSingleton.findElement(By.id("tabelaExemplo"));
+		
+		
 		PageContext pageContext = new PageContext();
 		PageEntity pageEntity = new PageEntity();
 		pageEntity.setName("Usuário");
@@ -33,6 +38,5 @@ public class ToExtractionTest {
 				
 			}
 		}
-		
 	}
 }

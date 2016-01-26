@@ -17,7 +17,7 @@ import dtos.templateConfig.TemplateConfig;
 import outputCode.CodeGenerator;
 
 public class FieldExtractionTest {
-
+	
 	@Test
 	public void test() {
 		TestDatabase testDatabase = new TestDatabase();
