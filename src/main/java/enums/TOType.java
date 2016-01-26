@@ -6,7 +6,9 @@ public enum TOType {
 	PASSWORD(ActionTemplateEnum.TYPE), 
 	BUTTON(ActionTemplateEnum.CLICK),
 	SUBMIT(ActionTemplateEnum.CLICK),
-	LABEL(ActionTemplateEnum.NONE);
+	LABEL(ActionTemplateEnum.NONE),
+	NONE(ActionTemplateEnum.NONE);
+	
 	
 	private ActionTemplateEnum action;
 

@@ -1,5 +1,6 @@
-package autInteraction.autDataExtraction;
+package autInteraction.autDataExtraction.toExtraction;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -16,6 +17,17 @@ public class DriverSingleton {
 	public static WebDriver getInstance(){
 		return driver;
 	}
+	
+	public static List<WebElement> findElementsVisible(By by){
+		List<WebElement> out = new ArrayList<WebElement>();
+		for(WebElement webElement : driver.findElements(by)){
+			if(webElement.isDisplayed()){
+				out.add(webElement);
+			}
+		}
+		return out;
+	}
+	
 	public static List<WebElement> findElements(By by){
 		return driver.findElements(by);
 	}

@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.junit.Test;
 
-import autInteraction.autDataExtraction.DriverSingleton;
-import autInteraction.autDataExtraction.FormExtractor;
+import autInteraction.autDataExtraction.toExtraction.DriverSingleton;
+import autInteraction.autDataExtraction.toExtraction.FormExtractor;
 import dtos.autDataExtractor.ToExtractor;
 import dtos.autDataExtractor.ToFormExtractor;
 import dtos.autDataExtractor.ToSearchResult;

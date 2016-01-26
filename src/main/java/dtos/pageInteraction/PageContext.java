@@ -22,6 +22,5 @@ public class PageContext {
 
 	public void setFields(List<PageField> fields) {
 		this.fields = fields;
-	}
-	
+	}	
 }

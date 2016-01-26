@@ -1,4 +1,4 @@
-package autInteraction.autDataExtraction;
+package autInteraction.autDataExtraction.toExtraction;
 
 import dtos.autDataExtractor.ToSearchResult;
 import enums.TOType;

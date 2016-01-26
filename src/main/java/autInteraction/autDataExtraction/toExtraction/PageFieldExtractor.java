@@ -1,4 +1,4 @@
-package autInteraction.autDataExtraction;
+package autInteraction.autDataExtraction.toExtraction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import dtos.autDataExtractor.ToExtractor;
 import dtos.pageInteraction.PageField;
 import exceptions.BlackMoonException;
 
@@ -16,8 +17,8 @@ public class PageFieldExtractor {
 	public List<PageField> getPageFields() throws BlackMoonException{
 		List<PageField> out = new ArrayList<PageField>();	
 		// Add buttons
-		//out.addAll(listAllInputSubmitButtons());
-
+		out.addAll(listAllInputSubmitButtons());
+		
 		// Add textFields
 		out.addAll(listAllInputTextField());
 		return out;
@@ -35,7 +36,9 @@ public class PageFieldExtractor {
 	// Implement search by label
 	private List<PageField> listPageFields(By by) throws BlackMoonException{
 		List<PageField> out = new ArrayList<PageField>();
-		for(WebElement webElement : DriverSingleton.findElements(by)){
+		for(WebElement webElement : DriverSingleton.findElementsVisible(by)){
+			System.out.println(new ToExtractionUtil().getSource(webElement));
+			
 			String elementName = nameExtractor.extractName(webElement);
 			out.add(new PageField(elementName, ""));
 		}

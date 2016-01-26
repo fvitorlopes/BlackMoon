@@ -1,4 +1,4 @@
-package autInteraction.autDataExtraction;
+package autInteraction.autDataExtraction.toExtraction;
 
 import java.util.ArrayList;
 import java.util.List;

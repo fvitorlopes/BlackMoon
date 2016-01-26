@@ -1,4 +1,4 @@
-package autInteraction.autDataExtraction;
+package autInteraction.autDataExtraction.toExtraction;
 
 import org.openqa.selenium.WebElement;
 
@@ -26,7 +26,8 @@ public class ToTypeIdentifier {
 		}else if (isLabel(webElement)) {
 			return TOType.LABEL;
 		}
-		throw new BlackMoonException("WebElement could not be categorized");
+		// throw new BlackMoonException("WebElement could not be categorized");
+		return TOType.NONE;
 	}
 	private boolean isSubmitButton(WebElement webElement){
 		return toExtraction.verifyAttribute("type", "submit", webElement);

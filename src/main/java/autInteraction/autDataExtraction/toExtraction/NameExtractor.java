@@ -1,4 +1,4 @@
-package autInteraction.autDataExtraction;
+package autInteraction.autDataExtraction.toExtraction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +21,8 @@ public class NameExtractor {
 		switch (toIdentifer.identifyTO(webElement)) {
 		case BUTTON:
 			return getInputButtonName(webElement);
+		case SUBMIT:
+			return getInputSubmitName(webElement);
 		case TEXT:
 			return getInputTextName(webElement);
 		default:
@@ -39,6 +41,23 @@ public class NameExtractor {
 		return labelName;
 	}
 
+	private String getInputSubmitName(WebElement webElement) {
+		List<String> parameters = new ArrayList<String>();
+		parameters.add("value");
+		String out = null;
+
+		for (String parameter : parameters) {
+			try {
+				out = webElement.getAttribute(parameter);
+				if (out != null) {
+					break;
+				}
+			} catch (Exception e) {// Silenced for not found attributes}
+			}
+		}
+		return out;
+	}
+	
 	private String getInputButtonName(WebElement webElement) {
 		List<String> parameters = new ArrayList<String>();
 		parameters.add("value");
@@ -67,7 +86,7 @@ public class NameExtractor {
 	private WebElement getExternalLabelNameElement(WebElement webElement) throws BlackMoonException {
 		System.out.println("Source webElement " + toExtractor.getSource(webElement));
 		
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < 2; i++) {
 			actualParent = getParentElement(webElement);
 			System.out.println("Souce parent " + toExtractor.getSource(actualParent));
 

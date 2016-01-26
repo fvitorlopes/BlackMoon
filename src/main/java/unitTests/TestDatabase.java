@@ -23,7 +23,7 @@ public class TestDatabase {
 
 		String newline = System.getProperty("line.separator");
 		
-		templateConfig.setHeader("public class Selenium2Example { " + newline + newline + "    public static void main(String[] args) { " +newline);
+		templateConfig.setHeader("public class Selenium2Example { " + newline + newline + "		public static void main(String[] args) { " +newline);
 		templateConfig.setFooter("    }"+newline+"}");
 
 		templateConfig.addAction(
