@@ -19,7 +19,7 @@ public class ToExtractionTest {
 		PageEntity pageEntity = new PageEntity();
 		pageEntity.setName("Usuário");
 		pageContext.setPageEntity(pageEntity);
-
+		
 		PageFieldExtractor pageFieldExtractor = new PageFieldExtractor();
 		
 		while (true) {
