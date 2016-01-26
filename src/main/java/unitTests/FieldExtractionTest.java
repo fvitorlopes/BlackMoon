@@ -26,7 +26,8 @@ public class FieldExtractionTest {
 		FormExtractor formExtractor = new FormExtractor();
 		TemplateConfig templateConfig = testDatabase.getTemplateConfig();
 		ToFormExtractor toFormExtractor = testDatabase.getToFormExtractor();
-
+		
+		
 		DriverSingleton.getInstance().get("file:///C:/Users/fvitor/git/BlackMoon/src/testPages/pages/basicForm.html");
 		try {
 			Thread.sleep(2000);

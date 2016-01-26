@@ -30,9 +30,7 @@ public class TableExtraction {
 
 		WebElement table = DriverSingleton.findElement(By.id("tabelaExemplo"));
 		extractTable(table);
-		
 	}
-
 	
 	// TODO : consider tables without thead and tbody
 	private List<String> getHeadersTable(WebElement table) {

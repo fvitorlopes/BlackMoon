@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src/main/java">
+	<classpathentry excluding="languageRecognition/messageCategorization/training/" kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
@@ -63,5 +63,6 @@
 	<classpathentry kind="lib" path="C:/Users/fvitor/Documents/Projects/jars/selenium/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="lib" path="jdbm-1.0.jar"/>
 	<classpathentry kind="lib" path="jsoup-1.8.2.jar"/>
+	<classpathentry kind="lib" path="opennlp-tools-1.6.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
