@@ -1,2 +1,40 @@
 0	usuário não cadastrado
 1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso
+0	usuário não cadastrado
+1	usuário cadastrado com sucesso

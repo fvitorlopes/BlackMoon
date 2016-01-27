@@ -21,5 +21,13 @@ public class MessageValue {
 	public void setMessageStatus(MessageCategoryStatusEnum messageStatus) {
 		this.messageStatus = messageStatus;
 	}
+
+	public MessageValue(String message, MessageCategoryStatusEnum messageStatus) {
+		super();
+		this.message = message;
+		this.messageStatus = messageStatus;
+	}
 	
+
+
 }
