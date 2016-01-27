@@ -20,8 +20,8 @@ public class MessageCategorizer {
 			dataIn = new FileInputStream("messageTraining.txt");
 			ObjectStream lineStream = new PlainTextByLineStream(dataIn, "UTF-8");
 			ObjectStream sampleStream = new DocumentSampleStream(lineStream);
-			int cutoff = 2;
-			int trainingIterations = 50;
+			int cutoff = 3;
+			int trainingIterations = 100;
 			model = DocumentCategorizerME.train("pt", sampleStream);
 		} catch (IOException e) {
 			e.printStackTrace();
