@@ -3,16 +3,16 @@ package unitTests;
 import java.util.ArrayList;
 import java.util.List;
 
-import dtos.autDataExtractor.ToExtractor;
-import dtos.autDataExtractor.ToFormExtractor;
-import dtos.template.CodeTemplate;
-import dtos.template.CodeTemplateStep;
-import dtos.templateConfig.ActionTemplateConfig;
-import dtos.templateConfig.ElementTemplateConfig;
-import dtos.templateConfig.TemplateConfig;
+import autInteraction.autDataExtraction.toExtraction.dtos.form.ToExtractor;
+import autInteraction.autDataExtraction.toExtraction.dtos.form.ToFormExtractor;
 import enums.ActionTemplateEnum;
 import enums.ElementSearchConfigEnum;
 import enums.TOType;
+import outputCode.dtos.template.CodeTemplate;
+import outputCode.dtos.template.CodeTemplateStep;
+import outputCode.dtos.templateConfig.ActionTemplateConfig;
+import outputCode.dtos.templateConfig.ElementTemplateConfig;
+import outputCode.dtos.templateConfig.TemplateConfig;
 
 public class TestDatabase {
 	// Template config

@@ -75,17 +75,13 @@ public class MessageTrainer {
 		listMessageValue.add(new MessageValue("usuário cadastrado com sucesso", MessageCategoryStatusEnum.SUCCESS));
 		
 		generateModel(listMessageValue);
-
 	
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
-	
-	// Create new file only for this
+
 	private void convertListToModel(List<MessageValue> listMessageValue) {
-		// Clean value
 
 		for (MessageValue messageValue : listMessageValue) {
 			try {
@@ -141,7 +137,7 @@ public class MessageTrainer {
 		}
 		 return out;
 	}
-
+	
 	public DoccatModel generateModel(List<MessageValue> messageValues){
 		cleanFile();
 		convertListToModel(messageValues);

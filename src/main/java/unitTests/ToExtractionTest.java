@@ -5,11 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import autInteraction.autDataExtraction.toExtraction.DriverSingleton;
-import autInteraction.autDataExtraction.toExtraction.PageFieldExtractor;
-import dtos.pageInteraction.PageContext;
-import dtos.pageInteraction.PageEntity;
-import dtos.pageInteraction.PageField;
+import autInteraction.autDataExtraction.toExtraction.dtos.field.PageContext;
+import autInteraction.autDataExtraction.toExtraction.dtos.field.PageEntity;
+import autInteraction.autDataExtraction.toExtraction.dtos.field.PageField;
+import autInteraction.autDataExtraction.toExtraction.extractors.DriverSingleton;
+import autInteraction.autDataExtraction.toExtraction.extractors.PageFieldExtractor;
 
 public class ToExtractionTest {
 	

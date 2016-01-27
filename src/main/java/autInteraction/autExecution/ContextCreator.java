@@ -1,7 +1,7 @@
 package autInteraction.autExecution;
 
-import dtos.pageInteraction.PageContext;
-import dtos.pageInteraction.PageEntity;
+import autInteraction.autDataExtraction.toExtraction.dtos.field.PageContext;
+import autInteraction.autDataExtraction.toExtraction.dtos.field.PageEntity;
 
 public class ContextCreator {
 

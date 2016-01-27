@@ -5,7 +5,8 @@ public class MessageValue {
 
 	private String message;
 	private MessageCategoryStatusEnum messageStatus;
-
+	
+	
 	public String getMessage() {
 		return message;
 	}

@@ -6,15 +6,15 @@ import java.util.List;
 
 import org.junit.Test;
 
-import autInteraction.autDataExtraction.toExtraction.DriverSingleton;
-import autInteraction.autDataExtraction.toExtraction.FormExtractor;
-import dtos.autDataExtractor.ToExtractor;
-import dtos.autDataExtractor.ToFormExtractor;
-import dtos.autDataExtractor.ToSearchResult;
-import dtos.template.CodeTemplate;
-import dtos.template.CodeTemplateStep;
-import dtos.templateConfig.TemplateConfig;
-import outputCode.CodeGenerator;
+import autInteraction.autDataExtraction.toExtraction.dtos.form.ToExtractor;
+import autInteraction.autDataExtraction.toExtraction.dtos.form.ToFormExtractor;
+import autInteraction.autDataExtraction.toExtraction.dtos.form.ToSearchResult;
+import autInteraction.autDataExtraction.toExtraction.extractors.DriverSingleton;
+import autInteraction.autDataExtraction.toExtraction.extractors.FormExtractor;
+import outputCode.dtos.template.CodeTemplate;
+import outputCode.dtos.template.CodeTemplateStep;
+import outputCode.dtos.templateConfig.TemplateConfig;
+import outputCode.generators.CodeGenerator;
 
 public class FieldExtractionTest {
 	

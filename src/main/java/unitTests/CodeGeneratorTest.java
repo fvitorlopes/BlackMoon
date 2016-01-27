@@ -4,9 +4,9 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import dtos.template.CodeTemplate;
-import dtos.templateConfig.TemplateConfig;
-import outputCode.CodeGenerator;
+import outputCode.dtos.template.CodeTemplate;
+import outputCode.dtos.templateConfig.TemplateConfig;
+import outputCode.generators.CodeGenerator;
 
 public class CodeGeneratorTest {
 	
