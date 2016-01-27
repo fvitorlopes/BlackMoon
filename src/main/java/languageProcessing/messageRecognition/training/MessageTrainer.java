@@ -7,18 +7,21 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.Writer;
 import java.util.ArrayList;
+import java.util.List;
+
+import org.jsoup.safety.Cleaner;
 
 import exceptions.BlackMoonException;
-import languageProcessing.messageRecognition.search.MessageCategoryEnum;
+import languageProcessing.messageRecognition.search.MessageCategoryStatusEnum;
+import languageProcessing.messageRecognition.search.MessageValue;
 
 public class MessageTrainer {
 
-	public void learnMessage(String message, MessageCategoryEnum messageCategory) throws BlackMoonException {
+	public void learnMessage(String message, MessageCategoryStatusEnum messageCategory) throws BlackMoonException {
 		try {
 			String line = "";
-			if (messageCategory.equals(MessageCategoryEnum.ERROR)) {
+			if (messageCategory.equals(MessageCategoryStatusEnum.ERROR)) {
 				line = line + "0";
 			} else {
 				line = line + "1";
@@ -37,7 +40,7 @@ public class MessageTrainer {
 	public ArrayList<String> getLinesFile() {
 		BufferedReader in = null;
 		try {
-			in = new BufferedReader(new FileReader("test.txt"));
+			in = new BufferedReader(new FileReader("message.txt"));
 		} catch (FileNotFoundException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -53,24 +56,43 @@ public class MessageTrainer {
 		}
 		return lines;
 	}
-	
+
 	public static void main(String[] args) {
 		MessageTrainer messageTrainer = new MessageTrainer();
-		try {
-			messageTrainer.learnMessage("usuário não cadastrado", MessageCategoryEnum.ERROR);
-			messageTrainer.learnMessage("usuário cadastrado com sucesso", MessageCategoryEnum.SUCCESS);
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-
-		// try {
-		// messageTrainer.learnMessage("Usuário não pode ser salvo",
-		// MessageCategoryEnum.ERROR);
-		// } catch (Exception e) {
-		// e.printStackTrace();
-		// }
-		System.out.println(messageTrainer.getLinesFile().size());
+		messageTrainer.testMessageTrainer();
 	}
 
+	public void testMessageTrainer() {
+
+		try {
+			cleanFile();
+			learnMessage("usuário não cadastrado", MessageCategoryStatusEnum.ERROR);
+			learnMessage("usuário cadastrado com sucesso", MessageCategoryStatusEnum.SUCCESS);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	// Create new file only for this
+	public void convertListToModel(List<MessageValue> listMessageValue) {
+		// Clean value
+
+		for (MessageValue messageValue : listMessageValue) {
+			try {
+				learnMessage(messageValue.getMessage(), messageValue.getMessageStatus());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		// Generate moedle
+	}
+
+	public void cleanFile() {
+		try {
+			new PrintWriter("test.txt").close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }

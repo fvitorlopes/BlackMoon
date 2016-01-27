@@ -3,6 +3,7 @@ package languageProcessing.messageRecognition.search;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
 
 import opennlp.tools.doccat.DoccatModel;
 import opennlp.tools.doccat.DocumentCategorizerME;
@@ -34,17 +35,39 @@ public class MessageCategorizer {
 			}
 		}
 	}
-	
-	public MessageCategoryEnum categorizeMessage(String message) {
+
+	public MessageCategoryStatusEnum categorizeMessage(String message) {
 		trainModel();
 		DocumentCategorizerME myCategorizer = new DocumentCategorizerME(model);
 		double[] outcomes = myCategorizer.categorize(message);
 		String category = myCategorizer.getBestCategory(outcomes);
-		
+
 		if (category.equalsIgnoreCase("1")) {
-			return MessageCategoryEnum.SUCCESS;
+			return MessageCategoryStatusEnum.SUCCESS;
 		} else {
-			return MessageCategoryEnum.ERROR;
+			return MessageCategoryStatusEnum.ERROR;
 		}
+	}
+
+	private void cleanFile() {
+		try {
+			new PrintWriter("test.txt").close();
+			;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) {
+		try {
+
+			MessageCategorizer messageCategorizer = new MessageCategorizer();
+			messageCategorizer.cleanFile();
+			System.out.println("foi");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 }

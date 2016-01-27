@@ -1,5 +1,5 @@
 package languageProcessing.messageRecognition.search;
 
-public enum MessageCategoryEnum {
+public enum MessageCategoryStatusEnum {
 	ERROR,SUCCESS
 }
