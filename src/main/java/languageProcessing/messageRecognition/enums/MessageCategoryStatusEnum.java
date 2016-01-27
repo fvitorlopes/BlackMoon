@@ -1,4 +1,4 @@
-package languageProcessing.messageRecognition.search;
+package languageProcessing.messageRecognition.enums;
 
 public enum MessageCategoryStatusEnum {
 	ERROR,SUCCESS

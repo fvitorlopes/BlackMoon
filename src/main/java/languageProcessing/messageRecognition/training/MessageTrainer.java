@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import exceptions.BlackMoonException;
-import languageProcessing.messageRecognition.search.MessageCategoryStatusEnum;
+import languageProcessing.messageRecognition.enums.MessageCategoryStatusEnum;
 import languageProcessing.messageRecognition.search.MessageValue;
 import opennlp.tools.doccat.DoccatModel;
 import opennlp.tools.doccat.DocumentCategorizerME;
