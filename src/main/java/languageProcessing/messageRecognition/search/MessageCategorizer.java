@@ -13,7 +13,6 @@ import opennlp.tools.util.PlainTextByLineStream;
 public class MessageCategorizer {
 	DoccatModel model;
 
-	//
 	public void trainModel() {
 		InputStream dataIn = null;
 		try {
