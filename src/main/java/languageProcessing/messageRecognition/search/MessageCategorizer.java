@@ -10,19 +10,14 @@ import opennlp.tools.doccat.DocumentSampleStream;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
 
-public class OtherDocumentCategorizer {
+public class MessageCategorizer {
 	DoccatModel model;
 
-	public static void main(String[] args) {
-		OtherDocumentCategorizer twitterCategorizer  = new OtherDocumentCategorizer();
-		// twitterCategorizer.trainModel();
-		twitterCategorizer.classifyNewTweet("Erro ao cadastrar recurso");
-	}
 	
 	public void trainModel() {
 		InputStream dataIn = null;
 		try {
-			dataIn = new FileInputStream("MessageTrain.txt");
+			dataIn = new FileInputStream("messageTraining.txt");
 			ObjectStream lineStream = new PlainTextByLineStream(dataIn, "UTF-8");
 			ObjectStream sampleStream = new DocumentSampleStream(lineStream);
 			int cutoff = 2;
@@ -41,15 +36,16 @@ public class OtherDocumentCategorizer {
 		}
 	}
 	
-	public void classifyNewTweet(String tweet) {
+	public MessageCategoryEnum categorizeMessage(String message) {
+		trainModel();
 		DocumentCategorizerME myCategorizer = new DocumentCategorizerME(model);
-		double[] outcomes = myCategorizer.categorize(tweet);
+		double[] outcomes = myCategorizer.categorize(message);
 		String category = myCategorizer.getBestCategory(outcomes);
-
+		
 		if (category.equalsIgnoreCase("1")) {
-			System.out.println("Mensagem de sucesso");
+			return MessageCategoryEnum.SUCCESS;
 		} else {
-			System.out.println("Mensagem de erro");
+			return MessageCategoryEnum.ERROR;
 		}
 	}
 }

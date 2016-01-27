@@ -1,4 +1,4 @@
-package languageProcessing.messageRecognition.search;
+package languageProcessing.messageRecognition.training;
 
 import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
@@ -14,20 +14,20 @@ import opennlp.tools.doccat.DocumentSampleStream;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
 
-public class DocumentTrainer {
+public class MessageTrainer {
 
 	public static void main(String[] args) {
 
 		DoccatModel model = null;
-
+		
 		InputStream dataIn = null;
 		try {
-			dataIn = new FileInputStream("Train.txt");
+			dataIn = new FileInputStream("messageTraining.txt");
 			ObjectStream<String> lineStream = new PlainTextByLineStream(dataIn, "UTF-8");
 
 			ObjectStream<DocumentSample> sampleStream = new DocumentSampleStream(lineStream);
-			model = DocumentCategorizerME.train("en", sampleStream);
-
+			model = DocumentCategorizerME.train("pt", sampleStream);
+			
 			OutputStream modelOut = null;
 			try {
 				modelOut = new BufferedOutputStream(new FileOutputStream("en-sentiment_out.train"));

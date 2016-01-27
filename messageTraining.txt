@@ -1,0 +1,1283 @@
+0	Erro ao salvar. Favor tente novamente.
+0	Solicitação de Local já cadastrada.
+0	Preenchimento Obrigatório. 
+0	Escolha uma OS
+0	Operação cancelada. Já existe registro cadastrado com essa descrição.
+0	CNPJ Inválido.
+0	CPF Inválido.
+0	Falha ao enviar email, tente novamente realizar o cadastro.
+0	A chave utilizada está expirada.
+0	A chave informada está incorreta ou nehum usuário cadastrado.
+0	Usuário já cadastrado.
+0	Email preenchido incorretamente.
+0	Não é possível gerar uma OS, já existe uma OS com status Gerada e com Romaneios Atreladas.
+0	Não é possivel cancelar a OS, pois existe uma romaneio vinculado.
+0	Número de Folhas informado incorreto.
+0	É obrigatório informar campo.
+0	CEP Inválido.
+0	Número de Folhas informado incorreto.
+0	Função já possui vínculo com documentos ou tipos de processos e por isso não pode ser excluída.
+0	Este tipo de Metadado já possui vínculo com tipo de documento e por isso não pode ser excluído.
+0	Esta descrição já existe na base de dados e não pode ser recadastrada.
+0	Este grupo já possui vínculo com tipo de perfil e por isso não pode ser excluído.
+0	Só é possível adicionar até 9 tipos de metadados por tipo de documento.
+0	Este tipo de Processo já possui vínculo com Tipo de documento e por isso não pode ser excluído.
+0	Este Regime já está vinculado a uma Função e por isso não pode ser excluído.
+0	Este Perfil já está vinculado a uma Pessoa ou Empresa e por isso não pode ser excluído.
+0	Esta Empresa já está vinculada a uma Pessoa ou Contrato e por isso não pode ser excluída.
+0	Registro não encontrado na Base de Dados.
+0	Este grupo não pode ser excluído do sistema.
+0	Este grupo não pode ser alterado.
+0	Perfil não autorizado a realizar essa função.
+0	Este Local não pode ser excluído do sistema, pois já está aceito ou ou já foi notificado para a empresa.
+0	Registro Salvo com sucesso. Nenhum email enviado para gestor da UPAG, pois não existe nenhum cadastrado no sistema.
+0	Só é possível alterar registros com situação SOLICITADO.
+0	Perfil não autorizado a realizar essa função.
+0	Horário de funcionamento inválido.
+0	Upag não tem pastas vinculadas!
+0	O número de folhas com verso não pode ser maior que o número de folhas!
+0	Ocorreu uma falha no sistema ao entregar a pasta!
+0	Arquivos do romaneio não encontrados.
+0	Documento conferido com sucesso!
+0	Pasta conferida com sucesso!
+0	Romaneio conferido com sucesso!
+0	Documento excluído com sucesso!
+0	Documento retificado com sucesso!
+0	Pasta retificada com sucesso!
+0	Romaneio retificado com sucesso!
+0	Romaneio devolvido com sucesso!
+0	Devolução de romaneio aceita com sucesso!
+0	Devolução de romaneio não aceita. A justificativa foi enviada por Email.
+0	Registro da execução da Etapa 1 realizado com sucesso!
+0	Registro da execução da Etapa 2 realizado com sucesso!
+0	Pasta(s) entregues com sucesso!
+0	Registro da execução da Etapa 3 realizado com sucesso!
+0	O Contrato não pode ser deletado, pois está vinculado a uma ou mais O.S.
+0	A pasta contrato não tem permissão de escrita para gravar o PDF. Favor contactar o administrator
+0	Ocorreu uma falha ao tentar salvar os dados.
+0	Ocorreu uma falha ao tentar salvar os dados. Não existe nenhum usuário com perfil de FISCAL cadastrado no sistema
+0	Impossível excluir este registro. Ele está vinculado a outro registro.
+0	CNPJ já cadastrado.
+0	CPF já cadastrado.
+0	Os valores unitários informados só podem ter uma casa depois do campo
+0	É necessário digitar um CPF para o Usuário!
+0	É necessário digitar um nome para o Usuário!
+0	É necessário digitar um email para o Usuário!
+0	Já existe usuário cadastrado com esse cpf 
+0	Não foram encontrados usuários segundo esses critérios!
+0	Certificado não encontrado  Por gentileza importe seu certificado no navegador ou conecte seu token 
+0	Problema ao autenticar certificado!
+0	Usuário não possui órgãos vinculados
+0	Valor digitado para o campo 'Código' não confere  Tente novamente 
+0	Erro ao autenticar o usuário 
+0	CPF inválido
+0	Senha deve conter letras e números e ter entre 8 a 12 caracteres 
+0	Formato de e-mail inválido 
+0	Erro na validação dos dados
+0	CNPJ inválido
+0	Já existe apresentante com o CNPJ informado
+0	Esse CEP não existe
+0	Já existe apresentante com o código Febraban informado 
+0	O nome do arquivo não é válido 
+0	Arquivo não encontrado  Verifique o nome do arquivo e tente novamente
+0	Remoção não permitida, verifique possíveis dependências deste registro
+0	CPF inválido 
+0	Já existe apresentante com o CPF informado 
+0	Já existe Cartório com o CNPJ informado 
+0	Já existe cartório com o Código Febraban informado no municipio 
+0	Já existe um cartório cadastrado no municipio  Necessário cadastrar um distribuidor 
+0	Já existe um Distribuidor no municipio 
+0	Não existe nenhum cartório no municipio 
+0	O codigo informado deve ser numérico 
+0	Já existe irregularidade com o código informado 
+0	Irregularidade utilizada em devolução de títulos 
+0	Data inválida 
+0	O lançamento de despesas deve ser somente da data atual ou posterior 
+0	Não é possível efetuar o lançamento  Já passou do horário limite 
+0	Já existe lançamento na data informada 
+0	A despesa não pode ser excluída  O valor já foi distribuído nos títulos 
+0	E-mail inválido 
+0	Erro ao copiar arquivo 
+0	Informar o arquivo!
+0	Arquivo em branco!
+0	elemento Não identificado
+0	Arquivo contém caractere que não está no padrão ASCII
+0	Arquivo corrompido  Tamanho da linha inválido 
+0	Arquivo corrompido  Número sequencial do registro no header não está contínuo  Faltou registro  
+0	Arquivo não é de remessa (tipo TPR) 
+0	O arquivo já foi enviado
+0	Já foi enviada remessa com o mesmo sequencial  
+0	Código Febraban do apresentante inválido  
+0	Existe remessa no arquivo com o mesmo sequencial para o município  
+0	Arquivo corrompido  Número sequencial do registro na transação não está contínuo  Faltou registro  
+0	Arquivo corrompido  Número sequencial do registro no trailler não está contínuo  Faltou registro  
+0	Arquivo corrompido  Soma de registros de transação existentes no arquivo não confere com total informado no header  
+0	Arquivo corrompido  Somatório do saldo no trailler não confere com somatório dos saldos dos títulos 
+0	Já passou do horário limite para envio da remessa
+0	Município não cadastrado na CRA 
+0	Município não possui cartório na CRA 
+0	Não foi possível cancelar envio  Passou do horário limite  Arquivo   
+0	Arquivo corrompido  Número sequencial do registro no header do cartório não está contínuo  Faltou registro  
+0	Arquivo corrompido  Solicitação não é de desistência 
+0	Arquivo corrompido  Número sequencial do registro no trailler do cartório não está contínuo  Faltou registro  
+0	Arquivo corrompido  Soma de solicitações do cartório não confere com total informado no header do cartório  
+0	Arquivo corrompido  Total de registros informado no trailler não confere com a soma dos totais informados no header do arquivo  
+0	Arquivo corrompido  Soma de registros existentes no arquivo não confere com total informado no header do arquivo  
+0	Header do arquivo corrompido  Arquivo não possui registro de header do cartório
+0	Header do arquivo corrompido  Está faltando no arquivo algum registro de header do cartório
+0	Trailler do arquivo corrompido  Arquivo não possui registro de trailler do cartório
+0	Trailler do arquivo corrompido  Está faltando no arquivo algum registro de trailler do cartório
+0	Header do arquivo corrompido  Arquivo não possui registro de header do arquivo
+0	Header do arquivo corrompido  Está faltando no arquivo algum registro de header do arquivo
+0	Trailler do arquivo corrompido  Arquivo não possui registro de trailler do arquivo
+0	Trailler do arquivo corrompido  Está faltando no arquivo algum registro de trailler do arquivo
+0	Código do município não informado 
+0	Não existe município com o código informado na CRA 
+0	Cartório não encontrado no município
+0	Erro ao gravar título
+0	Arquivo corrompido  Este arquivo não é de confirmação de remessa (tipo CRT) 
+0	Não existe remessa do apresentante ( - ) para ser confirmada 
+0	O arquivo já foi enviado em 
+0	Data do protocolo anterior a data da remessa 
+0	Código do município informado no arquivo não corresponde ao seu município 
+0	Código de ocorrência inválido  
+0	Código de irregularidade inválido  
+0	Data de ocorrência inválida  
+0	Protocolo inválido  
+0	Data do protocolo inválida  
+0	ódigo de cartório não informado 
+0	Código de cartório inválido ou não encontrado no município  
+0	Código do cartório informado no arquivo deve ser o mesmo do cartório logado 
+0	Título  Remessa  Apresentante  Nosso Número  Sequencial Registro    Não foi encontrado na CRA 
+0	Arquivo corrompido  Quantidade de registros no arquivo () não confere com o numero sequencial do registro no trailler () 
+0	Arquivo corrompido  Soma de registros de transação existentes no arquivo () não confere com total informado no header do arquivo () 
+0	Arquivo corrompido  Somatório do saldo no trailler () não confere com somatório dos saldos dos títulos () 
+0	Header do arquivo corrompido  Arquivo não possui registro de header
+0	Apresentante  - Sequencial Remessa  não foi encontrado na CRA 
+0	Arquivo corrompido  Este arquivo não é de retorno de remessa (tipo RTP) 
+0	Já foi enviado arquivo de retorno com o sequencial para o apresentante 
+0	Arquivo corrompido  Faltou informar o campo Agência Centralizadora 
+0	Arquivo corrompido  Faltou informar o campo Agência/Código do Cedente 
+0	Início do download do arquivo de confirmação 
+0	Remessa incompleta  Faltam títulos a serem confirmados 
+0	Não Gravado (Apresentante inválido) 
+0	Nenhum arquivo pendente 
+0	Não existe letra de câmbio pendente para impressão 
+0	Não existe letra de câmbio na data informada 
+0	Não existe nenhum arquivo pendente 
+0	Não existe cancelamento na data informada 
+0	Cancelamento do dia ainda não foi liberado 
+0	Apresentante não pode ser excluído  Possui agências cadastradas 
+0	Não pode excluir cartório  Existe um distribuidor cadastrado no municipio 
+0	Não pode excluir distribuidor  Existe mais de um cartório no municipio 
+0	Não pode ser excluido o único usuário administrador da CRA 
+0	Não pode ser excluido o usuário administrador desta instituição  Existem usuários subordinados à esse administrador 
+0	Não pode ser excluído  Existe registro de log gravado do usuário 
+0	Não existe remessa na data informada 
+0	Não existe confirmação na data informada 
+0	Não existe retorno na data informada 
+0	Não existe desistência na data informada 
+0	Nome de arquivo inválido  
+0	Número do título não informado 
+0	O número do documento deve possuir 11 ou 14 posições 
+0	O sequencial deve possuir 2 posições 
+0	Título não encontrado  Número título  - Documento   
+0	O arquivo está substituindo um existente 
+0	O arquivo está sendo gravado pela primeira vez 
+0	Erro ao gravar arquivo   Número título  - Documento   
+0	Não existe nenhuma remessa pendente de confirmação 
+0	Não existe remessa na data informada 
+0	Remessa não disponível 
+0	Remessa não confirmada  Faltou confirmar o título Nº  
+0	Já passou do horário limite para confirmação 
+0	Já existe título com o protocolo informado 
+0	A data do protocolo não pode ser maior que a atual 
+0	Protocolo inválido 
+0	Desistência do dia ainda não foi liberada 
+0	Não existe nenhuma desistência sem impressão 
+0	Não existe nenhum cancelamento sem impressão 
+0	Cancelamento do dia ainda não foi liberado 
+0	Não existe nenhum retorno para ser alterado 
+0	Título não encontrado ou ainda não está disponível para retorno 
+0	O título já foi retornado  Ocorrência inválida para enviar novo retorno 
+0	Código da Agência não informado 
+0	Nome da Agência não informado 
+0	Arquivo corrompido  Somatório de segurança dos registros não confere com a soma das quantidades informadas no header  
+0	Município  não está ativo 
+0	Arquivo corrompido  Número de controle do devedor não está contínuo 
+0	Arquivo corrompido  Soma de títulos existentes no arquivo não confere com total informado no header  
+0	Arquivo corrompido  Soma de indicações existentes no arquivo não confere com total informado no header  
+0	Arquivo corrompido  Soma de originais existentes no arquivo não confere com total informado no header  
+0	Já foi enviado título com o Protocolo e Data no dia  
+0	Os dados da devolução devem ser os mesmos para todos os devedores do título 
+0	Os dados da confirmação devem ser os mesmos para todos os devedores do título 
+0	Arquivo corrompido  Campo Agência Centralizadora inválido  
+0	Arquivo corrompido  Campo Agência/Código do Cedente inválido  
+0	Arquivo corrompido  Campo Agência/Código do Cedente não pode ser menor que 8 posições 
+0	Arquivo corrompido  Faltou informar o campo nosso número 
+0	Soma dos valores de TED/DOC dos títulos pagos ) maior que o permitido ) 
+0	Soma dos valores de SEDEX dos títulos protestados ) maior que o permitido ) 
+0	Valor do saldo do título no retorno ) menor que o valor do saldo na remessa ) 
+0	Existem títulos no arquivo com o mesmo protocolo ou nosso número para o cartório  
+0	Campos nosso número, nº do título, data de emissão, valor, saldo, vencimento e documento devedor duplicados no movimento 
+0	Arquivo corrompido  Somatório de segurança dos registros não confere com a quantidade informada no trailler  
+0	Documento de devedor duplicado 
+0	Caractere inválido
+0	Data do movimento inválida  
+0	Sequencial do devedor inválido 
+0	A data do protocolo não pode ser maior que a data do retorno 
+0	O horário de retenção do retorno deve ser maior que o horário de retorno 
+0	Informar o nome do devedor 
+0	Informar o documento do devedor 
+0	Não é possível efetuar o cancelamento  Já passou do horário limite 
+0	Não é possível liberar o pagamento  Valor comprovado inferior ao que está sendo liberado 
+0	Não é possível liberar o pagamento  Não há retorno disponível para ser liberado 
+0	Custas do cartório não pode ser informada para título pago 
+0	Título liquidado não pode ser informado com custas de distribuição  
+0	Valor do título inválido   É permitido somente caracteres numéricos 
+0	Saldo do título inválido   É permitido somente caracteres numéricos 
+0	Campo diferente do informado no envio da remessa 
+0	Título não pode ser excluído, foi liberado na retenção 
+0	Não é possível o comprovante  Já está sendo utilizado na liberação 
+0	Não é permitido cadastrar comprovante sem valor (zero) 
+0	O nome do arquivo não está no Padrão Febraban! 
+0	Código do apresentante inválido no nome do arquivo 
+0	Campo inválido 
+0	Já passou do horário limite para envio do cancelamento 
+0	Já passou do horário limite para envio da desistência 
+0	Apresentante   - Sequencial Remessa  (Faltam títulos enviados na remessa) 
+0	Cartório não autorizado a trabalhar com o apresentante ( - ) 	
+0	Não é possível excluir comprovante  Não existe saldo suficiente para comprovação do que foi liberado 
+0	Campo Nosso Número do retorno está diferente do informado na remessa 
+0	A data informada não pode ser maior que a atual 
+0	O nome do arquivo não corresponde ao tipo de arquivo enviado 
+0	A data informada não pode ser menor que a atual 
+0	Apresentante não autorizado a enviar pedido de cancelamento 
+0	Remessa não pode ser enviada após o dia limite 
+0	Não é possível desativar um município que possui cartório ativo 
+0	Apresentante já possui envelopamento em aberto na data corrente 
+0	Não é possível alterar ocorrência de retorno retido na plataforma 
+0	Campo Irregularidade de preenchimento obrigatório para ocorrência de devolução 
+0	Campo Custas cartório de preenchimento obrigatório para ocorrência de devolução com custas 
+0	Informar custas cartório para título devolvido com custas 
+0	Demais despesas não podem ser informadas para título devolvido com custas 
+0	Código agência já cadastrado para esse apresentante 
+0	Nenhum registro foi gravado 
+0	Não foi encontrado remessa para o título 
+0	A geração do pagamento só poderá ser realizada após horario de confirmação e retenção retorno 
+0	Não é possível gravar o retorno, enviado em duplicidade 
+0	Não foi possível concluir sua solicitação, o título já encontra-se confirmado 
+0	Arquivo corrompido  Somatório do valor de títulos baixados em cobrancas simples existentes no arquivo não confere com o somatório informado no trailler  
+0	Arquivo corrompido  Somatório de título baixados em cobrancas simples não confere com a soma da quantidade informada no trailler  
+0	Arquivo de pagamento já enviado 
+0	Apresentante não cadastrado na CRA 
+0	Cartório não cadastrado na CRA 
+0	Arquivo não é de retorno de pagamento
+0	Arquivo não é de retorno de cobrança
+0	Arquivo não é do banco Banese
+0	A geração do pagamento só poderá ser realizada após o horário de retorno 
+0	Cartorio sem conta cadastrada
+0	Informar o período para consulta
+0	A instituição do usuário não foi encontrada
+0	A instituição do usuário está inativa
+0	Data inicial não pode ser maior que a data final
+0	Campo demais despesas pode ser informado somente para título liquidado ou protestado  Protocolo   
+0	Já foi enviada remessa com o mesmo sequencial para o município   Último sequencial enviado   
+0	Apresentante sem conta cadastrada 
+0	Já existe lançamento de débito para o apresentante na data informada 
+0	Já existe outra conta com os dados informados 
+0	Sem pagamentos para serem gerados 
+0	A geração do pagamento só poderá ser realizada após o horário de retenção 
+0	Protocolo não informado 
+0	Não existe arquivo gerado na data informada 
+0	período inválido 
+0	A data informada não pode ser maior que a atual 
+0	Erro no processamento do banco de dados  Contate o administrador do sistema 
+0	O registro não pode ser removido pois foi gerado pelo Sistema
+0	Erro ao carregar localizadores 
+0	Não há fluxo de trabalho para o exercício de 
+0	O nome do filtro não pode ser vazio 
+0	Erro ao processar verificação em massa 
+0	Erro ao processar verificação em massa 
+0	Erro ao cancelar verificação em massa 
+0	Erro ao inicializar o contexto  
+0	Selecione ao menos um Pedido para ser alterado 
+0	Necessário selecionar pelo menos uma agenda SAM e/ou um orgão 
+0	A data de início da nova vigência deve ser preenchida!
+0	A data de término da nova vigência não pode ser anterior à data de seu início!
+0	Nenhum detalhe selecionado
+0	A Natureza de Receita deve ser informada
+0	A Unidade Recolhedora deve ser informada
+0	Nenhum Agregador selecionado
+0	Nenhuma vigência selecionada
+0	Erro ao obter a lista de Tipos de Impedimento
+0	Erro ao obter a lista de Anexos
+0	Erro ao obter Pedidos de Bloqueio/Desbloqueio da Emenda
+0	Erro ao calcular o total
+0	Nenhuma emenda foi selecionada 
+0	Erro ao Validar Impedimentos
+0	Erro ao Validar Impedimentos
+0	Não foi possível alterar a emenda, porque usuário não tem permissão para editá-la no momento atual dela  
+0	Erro ao alterar impedimento 
+0	Nenhuma emenda foi selecionada para edição em lote 
+0	Erro ao Atualizar dados dos Impedimentos
+0	Nenhuma emenda foi selecionada para desbloquear/bloquear 
+0	Nenhuma emenda foi selecionada para edição em lote 
+0	Erro ao salvar o Arquivo  
+0	As extensões permitidas são xls e xlsx  
+0	Nenhum órgão foi selecionado para envio dos impedimentos 
+0	Nenhum órgão foi selecionado para capturar os impedimentos 
+0	Nenhum órgão foi selecionado para retornar os impedimentos 
+0	Erro ao Enviar/Capturar/Retornar Impedimentos
+0	Selecione um Status para a proposta!
+0	Seu perfil de acesso não está associado ao momento vigente  Não é possível realizar esta operação 
+0	Nenhum foi selecionado!
+0	Houve erro na geração dos arquivos  Verifique a mensagem exibida para cada tipo com problema 
+0	Erro ao carregar opções de Exercícios
+0	Erro ao inicializar o contexto  
+0	Erro ao atualizar a lista de Unidades
+0	Erro ao atualizar a lista de Unidades
+0	Erro ao obter lista de exercícios
+0	Erro ao obter lista de momentos
+0	Erro ao gravar nova versão do Filtro
+0	Erro ao listar os identificadores de filtro disponíveis
+0	Erro ao tentar remover a fonte de recurso 
+0	Erro ao expandir fórmula do filtro
+0	Erro ao editar filtro
+0	Erro ao salvar filtro
+0	Erro ao salvar nova versão do filtro
+0	Erro ao tentar copiar a fonte de recurso 
+0	Erro ao inicializar o contexto  
+0	Informe um exercício para copiar os Órgãos selecionados 
+0	Escolha uma das duas opções relativas aos Órgãos já existentes, manter valores originais ou sobrescrevê-los 
+0	Selecione pelo menos um órgão para ser copiado 
+0	Informe um exercício de origem para copia de todos os Órgãos do exercicio 
+0	Informe um exercício de destino para copia de todos os Órgãos do exercicio 
+0	Escolha uma das duas opções relativas aos Órgãos já existentes no exercício de destino, manter valores originais ou sobrescrevê-los 
+0	Não há Órgãos no exercício de origem para serem copiados 
+0	Orgao pai do órgão 
+0	ainda não existe no exercício de destino 
+0	Selecione um esquema 
+0	Selecione uma tabela 
+0	Erro ao inserir tabela 
+0	Erro ao inserir coluna 
+0	Erro ao inserir coluna 
+0	Erro ao salvar o tipo de alteração  
+0	Erro ao tentar remover o tipo de alteração 
+0	Erro ao tentar copiar os tipos de alteração 
+0	Não foi selecionado nenhum registro para ser alterado 
+0	Nenhum item foi selecionado
+0	Não existem configurações marcadas para 
+0	Não existem configurações marcadas para projeção 
+0	Não existem configurações marcadas para fonteamento 
+0	Antes de calcular as projeções, o novo cenário deve ser salvo 
+0	Não foi possível concluir o cálculo das projeções 
+0	Exercício inicial para marcadores, não configurado, entre em contato com suporte SIOP
+0	Não pode existir dois atributos com mesmo número de ordem!
+0	Atributo não pode ser excluido, pois já existe conteúdo cadastrado!
+0	Não pode existir dois atributos com mesmo número de ordem!
+0	É necessário filtrar pelo menos pelo exercício 
+0	Não foi possível salvar os dados  
+0	Erro na linha 
+0	Erro ao realizar consulta
+0	Erro ao abrir Pedido
+0	Erro ao abrir Pedido
+0	Erro ao alterar Órgão
+0	Erro ao atualizar lista de Tipo de Alteração
+0	Erro ao atualizar lista de Pedidos
+0	Erro ao abrir as informações do Localizador 
+0	Erro ao abrir as informações da Dotação
+0	Erro ao abrir as informações para geração do pedido
+0	Erro ao realizar consulta
+0	Erro ao disponibilizar ações  
+0	Nenhum Localizador selecionado 
+0	Erro ao disponibilizar ações para reabertura
+0	Erro ao Criar os pedidos de Reabertura
+0	Erro ao inserir os localizadores dos pedidos  
+0	Erro ao abrir Pedido
+0	Pedido selecionado para edição não pertence ao exercício selecionado na combo de exercício do sistema 
+0	Erro ao abrir o pedido para edição  
+0	Erro ao atualizar dados  
+0	Erro ao abrir as opções de geração do espelho  
+0	Erro ao realizar a operação  
+0	Erro ao confirmar opção  
+0	Erro ao obter informações do Pedido  
+0	Erro ao excluir Pedidos  
+0	Erro ao copiar o pedido  
+0	Faixa de remuneração inválida 
+0	Ação não encontrada 
+0	Erro ao enviar contratação de pessoal 
+0	Não foi possível realizar a captura de algumas das ações selecionadas 
+0	Algumas das ações selecionadas não possuem contratações e não podem ser capturada 
+0	Selecione algum contrato
+0	Selecione alguma consulta
+0	Por favor, preencha pelo menos  
+0	Erro ao selecionar esfera
+0	Erro ao selecionar tipo de ação
+0	Caracteres não conferem com a imagem
+0	E-mail e/ou senha incorreto(s)
+0	Caracteres não conferem com a imagem
+0	Erro ao salvar consulta
+0	Erro ao selecionar acompanhamento 
+0	Erro ao selecionar identificador de acompanhamento
+0	Erro ao obter informação financeira do plano orçamentário
+0	Erro ao marcar planos orçamentários
+0	Erro ao desmarcar planos orçamentários
+0	Erro ao marcar planos orçamentários
+0	Erro ao desmarcar planos orçamentários
+0	Erro ao carregar lista de tipos de apropriação 
+0	Erro ao carregar lista de temáticas
+0	Erro ao carregar lista de acompanhamentos
+0	Erro ao carregar lista de identificadores de acompanhamento 
+0	Erro ao carregar lista de detalhes de acompanhamento 
+0	Erro ao carregar lista de itens de NFSP 
+0	Erro ao alterar UO
+0	Erro ao alterar Programa
+0	Erro ao alterar Ação
+0	Erro ao alterar Localizador
+0	Erro ao selecionar RP Atual
+0	Erro ao alterar página
+0	Erro ao exibir/remover linhas não suplementadas
+0	Erro ao abrir Informações do Localizador
+0	Erro ao abrir Informações da Dotação
+0	Erro ao consultar as Emendas da Dotação
+0	Erro ao atualizar totais
+0	Erro ao atualizar dados de descentralização
+0	Erro ao incluir nova linha
+0	Erro ao copiar Linha(s)
+0	Erro ao excluir Localizadores
+0	Erro ao incluir nova linha
+0	Erro ao habilitar Linha para edição
+0	Erro ao salvar dados  
+0	Erro ao copiar Linha
+0	Erro ao zerar linhas  
+0	Erro ao zerar linha(s) selecionadas
+0	Erro ao zerar valores
+0	Erro ao excluir Localizador do Pedido
+0	Erro ao excluir Registro do Pedido
+0	Erro ao consultar permissões de Suplementação/Cancelamento
+0	Erro ao atualizar a lista de bloqueios/desbloqueios do pedido
+0	Erro ao incluir dotações não suplementadas/canceladas
+0	Erro ao preencher lista de Naturezas de Despesa
+0	Erro ao preencher lista de Fontes
+0	Erro ao preencher lista de IdUsos
+0	Erro ao preencher lista de IdOcs
+0	Erro ao preencher lista de Rps de Lei
+0	Erro ao preencher lista de Planos Orçamentários
+0	Erro ao preencher lista de Rp de Lei
+0	Erro ao preencher lista de Planos Orçamentários
+0	Erro ao preencher lista de Rp Atual
+0	Erro ao preencher lista de UOs
+0	Erro ao preencher lista de Programas
+0	Erro ao preencher lista de Ações
+0	Erro ao preencher lista de Localizadores
+0	Erro ao exibir/remover localizadores sem produto
+0	Erro ao zerar valores para o localizador
+0	Erro ao excluir Localizador do Pedido
+0	Erro ao salvar acréscimo de meta física  
+0	Erro ao salvar redução de meta física  
+0	Erro ao obter informações Físicas do Pedido
+0	Erro ao alterar página
+0	Erro ao exibir/remover linhas não suplementadas
+0	Erro ao salvar acréscimo de meta física do P O   
+0	Erro ao salvar redução de meta física do P O   
+0	Erro ao alterar página
+0	Erro ao obter informações Físicas do Pedido
+0	Erro ao zerar valores da Linha
+0	Erro ao excluir Localizador do Pedido
+0	Erro ao exibir/remover linhas não suplementadas
+0	Erro ao abrir Informações do Localizador
+0	Erro ao abrir Informações da Dotação
+0	Erro ao alterar página
+0	Erro ao atualizar a lista de bloqueios/desbloqueios do pedido
+0	Erro ao incluir dotações não bloquedas/desbloqueadas
+0	Erro ao alterar página
+0	Erro ao realizar filtragem dos Pedidos
+0	Erro ao realizar filtragem dos Pedidos
+0	Erro ao alterar página
+0	A data de encerramento informada é inválida
+0	Erro ao alterar opção de consulta 
+0	Ação não encontrada 
+0	Erro ao enviar transferência de recursos 
+0	Não foi possível realizar a captura de algumas das ações selecionadas 
+0	Algumas das ações selecionadas não possuem destinação de recursos e não podem ser capturada 
+0	Ação não encontrada 
+0	Erro ao enviar transferência de recursos 
+0	Não foi possível realizar a captura de algumas das ações selecionadas 
+0	Algumas das ações selecionadas não possuem destinação de recursos e não podem ser capturada 
+0	Erro ao enviar detalhamento de gasto 
+0	Erro ao enviar detalhamento 
+0	Não foi possível realizar a captura das ações selecionadas  Verifique suas permissões 
+0	Algumas das ações selecionadas não possuem detalhamento e não puderam ser capturadas 
+0	Erro ao salvar dados da dotação que estava sendo editada
+0	Erro ao criar Nova Classificação
+0	Erro ao selecionar RP Atual
+0	Erro ao atualizar dados de descentralização
+0	Erro ao atualizar totais
+0	Erro ao consultar as Emendas da Dotação
+0	Erro ao obter informações sobre a fonte
+0	Erro ao abrir Informações do Localizador
+0	Erro ao abrir Informações da Dotação
+0	Erro ao abrir Informações da Dotação
+0	Erro ao preencher lista de Planos Orçamentários
+0	Erro ao preencher lista de Rp de Lei
+0	Erro ao exibir tabela única de detalhamento
+0	Erro ao exibir tabela única de detalhamento
+0	Erro ao exibir tabela detalhamento do localizador
+0	Erro ao exibir tabela única de detalhamento
+0	Erro ao exibir detalhamento dos POs por localizador
+0	Erro ao obter informações financeiras do Pedido
+0	Erro ao inicializar o contexto  
+0	Seu perfil de acesso não está associado ao momento vigente  Não é possível realizar esta operação 
+0	Nenhuma proposta listada para ser devolvida!
+0	Selecione um ato  
+0	Erro aos salvar dados
+0	Erro ao trocar o Tipo de Alteração  
+0	Erro ao confirmar a troca de Tipo de Alteração  
+0	Erro ao cancelar a troca de Tipo de Alteração  
+0	Erro ao atualizar dados  
+0	Erro ao obter pedido  
+0	Erro ao consultar alterações do pedido agregador  
+0	Erro ao inicializar o contexto  
+0	Erro ao obter a lista de Tipos de Impedimento
+0	Justificativa não pode ser maior que 3000 caracteres 
+0	Selecione ao menos um tipo de impedimento 
+0	Não foi possível alterar a análise da emenda, porque ela não está no momento atual  
+0	A seleção do tipo de impedimento 'Outros' obriga o preenchimento do campo descrição da justificativa 
+0	Erro ao salvar análise de impedimento 
+0	Erro ao salvar o Arquivo  
+0	Erro ao obter a lista de Anexos
+0	Por favor, selecione pelo menos um órgão para realizar a tramitação 
+0	Usuário sem permissão para realizar esta operação 
+0	Erro encontrado ao tentar tramitar emendas 
+0	Por favor, selecione pelo menos um parlamentar para realizar a tramitação 
+0	Usuário sem permissão para realizar esta operação 
+0	Erro encontrado ao tentar tramitar emendas 
+0	Falha ao desfazer a importação 
+0	A proposta já foi enviada, não é possível reenviar uma proposta, a não ser que ela tenha sido devolvida 
+0	Seu perfil de acesso não está associado ao momento vigente  Não é possível realizar esta operação  
+0	Nenhuma proposta listado para ser enviada!
+0	Selecione um ato  
+0	Erro ao inicializar o contexto  
+0	Erro ao alterar nível de abertura da natureza de receita
+0	Erro ao Limpar Filtros
+0	Erro ao realizar Consulta
+0	Erro ao realizar Consulta
+0	Erro ao Aprovar Utilização de Excesso 
+0	Erro ao Aprovar Utilização de Superávit 
+0	Erro ao Rejeitar Utilização de Excesso 
+0	Erro ao Rejeitar Utilização de Superávit 
+0	Erro ao Pré-reservar Utilização de Excesso 
+0	Erro ao Pré-reservar Utilização de Superávit 
+0	Erro ao tornar a utilização de Excesso em Análise 
+0	Erro ao tornar a utilização de Superávit em Análise
+0	Erro ao alterar página
+0	Erro ao abrir as informações da Fonte 
+0	Erro ao abrir as informações da Fonte 
+0	Erro ao atualizar Lista de Órgãos
+0	Erro ao atualizar Lista de Fontes
+0	Erro ao atualizar Lista de Fontes
+0	Erro ao atualizar Lista de Status
+0	Erro ao atualizar Lista de Naturezas de Receita
+0	Erro ao abrir Pedido
+0	Existe(m) Planos Orçamentário(s) sem detalhamento financeiro 
+0	Erro ao atualizar informações
+0	Erro ao atualizar informações
+0	Erro ao obter mes corrente
+0	Erro ao obter a data
+0	Erro ao copiar execução receita
+0	Erro ao copiar execução de despesa
+0	Erro ao fechar a janela
+0	Mês de destino selecionado não pode receber dados, pois não se encontra aberto e com data limite excedida 
+0	Existem pendências que impedem o envio
+0	Erro ao excluir observação 
+0	Erro ao excluir observação 
+0	O limite máximo para o campo de observação são 400 caracteres
+0	Erro ao gravar os dados  
+0	O limite máximo para o campo de observação são 400 caracteres
+0	Erro ao gravar os dados  
+0	Erro ao habilitar/desabilitar escolha múltipla de Uo  
+0	Erro ao habilitar/desabilitar escolha múltipla de Uo  
+0	Erro ao habilitar/desabilitar escolha múltipla de Origem  
+0	Erro ao habilitar/desabilitar escolha múltipla de GND  
+0	Erro ao habilitar/desabilitar escolha múltipla de Fonte  
+0	Erro ao habilitar/desabilitar escolha múltipla de RP  
+0	Erro ao alterar Órgão  
+0	Erro ao atualizar lista de Origem  
+0	Erro ao atualizar lista de Fontes  
+0	Erro ao atualizar lista de RP  
+0	Erro ao habilitar/desabilitar escolha múltipla de Uo
+0	Erro ao alterar Órgão
+0	Erro ao atualizar lista de Classificacao Alterações  
+0	Erro ao filtar a lista de recursos disponíveis
+0	Erro ao listar os recursos disponíveis
+0	Erro ao obter informações financeiras do Pedido
+0	Erro ao consulta detalhamento do pedido por localizador
+0	Erro ao obter informações Físicas do Pedido
+0	Erro ao abrir Informações do Localizador
+0	Para processar o fonteamento é necessário informar o Exercício 
+0	Para executar este filtro, é necessário informar pelo menos uma propriedade a ser filtrada!
+0	Exercício de destino não especificado 
+0	Nenhuma função selecionada
+0	Erro ao inicializar o contexto  
+0	Planilha incorreta, a planilha está em branco 
+0	A importação não foi realizada, verifique se a planilha contém dados e não contém linhas em branco 
+0	Erro ao inicializar o contexto  
+0	Exercício de destino não especificado 
+0	Nenhuma função selecionada
+0	Erro ao inicializar o contexto  
+0	É necessário selecionar um cenário para processar a operação 
+0	Não foi possível concluir o cálculo das parcelas 
+0	Erro ao importar precatórios 
+0	Erro ao importar precatórios  
+0	Propostas não excluídas
+0	Propostas não excluídas  
+0	Propostas NÃO foram geradas
+0	Propostas NÃO foram geradas  
+0	Não foi possível concluir o cálculo das parcelas 
+0	O arquivo selecionado já foi processado 
+0	Erro ao importar precatórios 
+0	Selecione uma fonte e unidade orçamentária para fazer o remanejamento 
+0	Só é possível remanejar uma fonte e unidade orçamentária por vez  Por favor, retire a seleção das demais 
+0	Para remanejar valores de um órgão, é necessário antes salvar o valor do superávit 
+0	Necessário informar um valor de remanejamento 
+0	Valor a ser remanejado não pode ser maior que o valor atual da origem 
+0	Escolha um órgão diferente do órgão de origem 
+0	Fonte e unidade orçamentária de destino duplicada 
+0	Erro ao inserir dados de origem e destino do remanejamento 
+0	Erro ao alterar dados de origem e destino do remanejamento 
+0	Erro ao alterar valor para unidade orçamentária de origem 
+0	Erro ao alterar valor para unidade orçamentária de destino 
+0	Erro ao incluir valor para unidade orçamentária de destino 
+0	Selecione uma Grade de Parâmetros
+0	Selecione um parâmetro
+0	Informe um exercício
+0	Informe a quantidade de exercícios anteriores
+0	Informe a quantidade de exercícios posteriores
+0	Parâmetro já incluído na grade
+0	Selecione uma Grade de Parâmetros
+0	A importação não foi realizada, verifique se a planilha contém dados e não contém linhas em branco 
+0	A importação não foi realizada, verifique se a planilha contém dados e não contém apenas linhas em branco 
+0	Erro ao inicializar o contexto  
+0	Erro ao inicializar o contexto  
+0	Informe um exercício para copiar os Idocs selecionados 
+0	Escolha uma das duas opções relativas aos Idocs já existentes, manter valores originais ou sobrescrevê-los 
+0	Selecione pelo menos um idoc para ser copiado 
+0	Informe um exercício de origem para copia de todos os Idocs do exercicio 
+0	Informe um exercício de destino para copia de todos os Idocs do exercicio 
+0	Escolha uma das duas opções relativas aos Idocs já existentes no exercício de destino, manter valores originais ou sobrescrevê-los 
+0	Não há Idocs no exercício de origem para serem copiados 
+0	Extensão de arquivo inválida  Apenas arquivos TXT são permitidos 
+0	Arquivo não selecionado 
+0	Arquivo muito grande para ser importado 
+0	Ocorreu um erro e seu arquivo não pode ser importado  Tente novamente 
+0	Para realizar o processamento é necessário informar pelo menos o exercício!
+0	A inconsistência selecionada não existe mais
+0	Erro ao realizar pesquisa 
+0	Erro ao limpar filtro de pesquisa
+0	Erro ao inicializar tela
+0	Erro ao inicializar tela
+0	Erro ao selecionar registro 
+0	Erro ao excluir seleção 
+0	Erro ao excluir seleção 
+0	Erro ao selecionar tipo de relatório 
+0	Erro ao marcar planos orçamentários
+0	Erro ao desmarcar planos orçamentários
+0	Erro ao marcar planos orçamentários
+0	Erro ao desmarcar planos orçamentários
+0	Não há momento seguinte a este perfil 
+0	Workflow para o exercício de não existe 
+0	Erro ao obter total dos Pedidos Efetivados  
+0	Erro ao obter a despesa atual da fonte 
+0	Erro ao obter a despesa LOA da fonte 
+0	Erro ao obter total dos Pedidos Aprovados em tramitação  
+0	Erro ao obter total dos Pedidos pré-reservados em tramitação  
+0	Erro ao obter total dos Pedidos Efetivados  
+0	Erro ao obter total dos Pedidos Aprovados em tramitação  
+0	Erro ao obter total dos Pedidos pré-reservados em tramitação  
+0	Erro ao inicializar o contexto  
+0	Não há fluxo de trabalho para o exercício de 
+0	Não há momento seguinte a este perfil 
+0	O seu perfil não possui permissão para cadastrar uma nova janela 
+0	Não é possível selecionar uma data limite anterior a hoje
+0	Não é possível selecionar uma data limite anterior a hoje
+0	O seu perfil não possui permissão para cadastrar uma nova janela 
+0	Não há fluxo de trabalho para o exercício de 
+0	Nenhum(a) foi selecionado(a)!
+0	A data de abertura não pode ser anterior à data de abertura da janela de trabalho do seu órgão superior
+0	A data de fechamento não pode ser posterior à data de fechamento da janela de trabalho do seu órgão superior
+0	Você não pode gravar janelas de trabalho para órgãos, apenas para UOs
+0	Nenhum órgão/UO foi selecionado
+0	Nenhum órgão/UO foi selecionado
+0	Você não pode excluir janelas de trabalho pertencentes a órgãos
+0	Nenhum órgão/UO foi selecionado
+0	Exercício de destino e descrição nova não especificados  Informe ao menos um deles 
+0	Nenhum perfil selecionado
+0	Nenhum momento selecionado
+0	Nenhum recurso selecionado
+0	Nenhum fluxo de trabalho selecionado
+0	Mais de um fluxo de trabalho selecionado
+0	Erro ao inicializar o contexto  
+0	Nenhum arquivo foi selecionado para upload 
+0	Erro ao salvar o arquivo  
+0	O arquivo não foi enviado porque contém vírus
+0	Erro ao realizar a verificação de vírus no arquivo
+0	Erro ao inicializar o contexto  
+0	Erro ao selecionar serviço
+0	Erro ao inicializar o contexto  
+0	Não existem marcadores cadastrados para esse tipo
+0	Selecione ao menos a Unidade ou Programa nos filtros, ou restrinja o escopo para 'Itens marcados'
+0	Selecione algum item para ser marcado
+0	Selecione algum marcador ou a opção Sem Marcação
+0	Selecione um marcador
+0	Selecione algum marcador
+0	Erro ao inicializar o contexto  
+0	Erro ao gravar dados
+0	Deve ser preenchido se meta for quantificável 
+0	Deve ser preenchido se meta for quantificável 
+0	Deve ser preenchido somente se meta for quantificável 
+0	Deve ser preenchido somente se meta for quantificável 
+0	Limite do campo texto excedido  Permitido 
+0	Erro ao enviar dados
+0	Erro ao inicializar o contexto  
+0	Erro ao inicializar o contexto  
+0	A Data de Início da nova vigência deve ser informada 
+0	Selecione algum parâmetro
+0	Planilha inválida, verifique se a planilha contém dados e não contém apenas linhas em branco 
+0	Não foi possível concluir o cálculo das parcelas 
+0	Erro ao restaurar dados da Planilha no Pedido
+0	A importação não foi realizada, verifique se a planilha contém dados e não contém linhas em branco 
+0	Planilha incorreta, apresenta campos em branco na linha  
+0	Planilha incorreta, apresenta campos em branco na linha  
+0	A importação não foi realizada, verifique se a planilha contém dados e não contém apenas linhas em branco 
+0	Erro ao inicializar o contexto  
+0	Erro ao carregar lista de usuários  
+0	Erro ao realizar consulta  
+0	Erro ao cadastrar permissões  
+0	Erro ao excluir permissões  
+0	Erro ao atualizar Lista de Órgãos
+0	Erro ao atualizar Lista de Fontes
+0	Erro ao atualizar Lista de Fontes
+0	Erro ao selecionar registros  
+0	Erro ao selecionar registros  
+0	Nenhuma permissão selecionada
+0	Nenhuma permissão selecionada
+0	Erro ao inicializar o contexto  
+0	Não foi possível realizar a carga da Base de Partida 
+0	Problema ao gravar o estado atual da formalização 
+0	Erro ao tentar executar operação 
+0	Não é possível apagar o dispositivo principal 
+0	Não é possível avaliar a emenda  Lote já enviado 
+0	Por favor, preencha a justificativa da avaliação 
+0	Não é possível avaliar a emenda  Lote já enviado 
+0	Selecione o departamento/agente técnico 
+0	Não há janela de trabalho aberta 
+0	Selecione um órgão emissor do parecer 
+0	Por favor, preencha o texto do parecer 
+0	Não há janela de trabalho aberta 
+0	Não é possível emitir parecer para a emenda  Lote já enviado 
+0	O lote do órgão selecionado já foi enviado 
+0	Lote já enviado  A emenda não pode ser excluída 
+0	Somente o autor da emenda pode excluí-la 
+0	A emenda já foi avaliada  Não pode ser excluída 
+0	Emenda originada em outro momento  Não pode ser excluída 
+0	A emenda já possui pareceres emitidos e não pode ser excluída 
+0	Erro ao excluir emenda 
+0	Um CPF deve ser informado 
+0	Um CNPJ deve ser informado 
+0	O nome do beneficiário deve ser informado 
+0	O valor para o beneficiário deve ser informado 
+0	O valor para o beneficiário deve ser maior que zero 
+0	Já existe um beneficiário principal para este precatório 
+0	Já existe um beneficiário com o CPF/CNPJ informado 
+0	Já existe um beneficiário com o CPF/CNPJ informado 
+0	Selecione um ato!
+0	Selecione um Dispositivo!
+0	Proposta já enviada para o Órgão selecionado!
+0	Seu perfil de acesso não está associado ao momento vigente  Não é possível realizar esta operação 
+0	Nenhum(a) foi selecionado(a)!
+0	Erro ao inicializar o contexto  
+0	Problema ao salvar programações orçamentárias  
+0	O órgão selecionado não possui acesso a esta funcionalidade 
+0	Erro ao enviar programação de ação 
+0	Não foi possível realizar a captura das ações selecionadas  Verifique suas permissões 
+0	Algumas das ações selecionadas não possuem programação de gasto e não puderam ser capturadas 
+0	Erro ao carregar opções de Exercícios
+0	Erro ao atualizar a lista de UOs  
+0	Erro ao incluir as Empresas Seleciondas no Pedido  
+0	Erro ao inicializar o contexto  
+0	Erro ao inicializar o contexto  
+0	Erro ao enviar regionalização de gasto 
+0	Não foi possível realizar a captura das entidades selecionadas  Verifique suas permissões 
+0	Nenhum detalhe selecionado
+0	Planilha incorreta, apresenta campos em branco na linha  
+0	Planilha incorreta, apresenta campos em branco na linha  
+0	A importação não foi realizada, verifique se a planilha contém dados e não contém apenas linhas em branco 
+0	Erro nos detalhes da Regra  Código pai não existente  Verifique a linha  
+0	Erro nos detalhes da Regra  Código repetido informado na linha  
+0	Planilha incorreta, Unidade Recolhedora não cadastrada na linha  
+0	Planilha incorreta, Natureza de Receita não cadastrada na linha  
+0	Data de início causa interseção de períodos na linha 
+0	Data de término causa interseção de períodos na linha 
+0	Data de início não informada na linha  
+0	Data de término anterior à data de início da vigência na linha  
+0	É necessário informar um código para o Agregador de Detalhes de RCF!
+0	É necessário informar uma descrição para o Agregador de Detalhes de RCF!
+0	Selecione uma regra
+0	Por gentileza, digite pelo menos 2 caracteres
+0	Os campos Exercício e Divulgação devem ser informados 
+0	Seu perfil de acesso não possui nenhum tipo de marcador visível  Não é possível emitir relatórios 
+0	Seu Perfil não possui autorização para gerar relatório para Ano Exercício selecionado 
+0	Não há fluxo de trabalho para o exercício de 
+0	Seu Perfil não possui autorização para gerar Relatório para Ano Exercício selecionado 
+0	Erro ao calcular o total
+0	O filtro ao qual você esta tentando visualizar está indisponível pois o recurso relacionado a ele foi excluído 
+0	O filtro ao qual você esta tentando editar está indisponível pois o recurso relacionado a ele foi excluído 
+0	O filtro ao qual você esta tentando visualizar está indisponível pois o recurso relacionado a ele foi excluído 
+0	Não existe ato para o exercício selecionado  Não será possível gerar o relatório 
+0	Escolha pelo menos um Emissor (Agente Técnico, SOF ou Parecerista)!
+0	Escolha pelo menos um Emissor (Órgão Setorial, Unidade Orçamentária, Agente Técnico ou SOF)!
+0	Escolha pelo menos um Emissor (Agente Técnico, SOF ou Parecerista)!
+0	Não existe ato para o exercício selecionado  Não será possível gerar o relatório 
+0	Um CPF deve ser informado 
+0	Um CNPJ deve ser informado 
+0	O nome do beneficiário deve ser informado 
+0	O valor para o beneficiário deve ser informado 
+0	Já existe um beneficiário principal para este precatório 
+0	Os filtros Órgão e Exercício são obrigatórios 
+0	Erro ao gerar o relatório
+0	Preencha uma descrição(motivo ou justificativa) para a Efetivação
+0	Erro ao Efetivar Remanejamento
+0	Erro ao excluir as movimentações do Financeiro  
+0	WorkFlow SAOC não cadastrado para 
+0	Não existem marcadores cadastrados para esse tipo
+0	Erro ao atulizar infornmações de detalhamento financeiro do órgão
+0	Erro ao obter lista de localizadores escolhidos  
+0	Erro ao abrir Seleção de Classificações
+0	Erro ao abrir seleção de justificativas  
+0	Exercício de destino não especificado 
+0	Nenhuma função selecionada
+0	Erro ao inicializar o contexto  
+0	Erro ao inicializar o contexto  
+0	Exercício não informado
+0	Subtipo não informado
+0	Subtipo já existe no exercício indicado
+0	Exercício de origem e/ou de destino não especificado(s) 
+0	Erro ao inicializar o contexto  
+0	Erro ao inicializar o contexto  
+0	Erro ao inicializar o contexto  
+0	Erro ao inicializar o contexto  
+0	Erro ao enviar notificação de itens não marcados 
+0	Problema ao salvar vinculações 
+0	Você não possui permissão para excluir marcadores
+0	Erro ao inicializar o contexto  
+0	Não há fluxo de trabalho para o exercício de 
+0	Por favor, preencha o motivo do retorno das captações selecionadas 
+0	Os filtros de período e momento são obrigatórios  
+0	Erro ao inicializar o contexto  
+0	Perfil Cadastrador não pode ser excluído pela aplicação 
+0	Inválido 
+0	CPF inválido 
+0	Senha deve conter letras e números e ter entre 8 a 12 caracteres 
+0	Senha deve conter letras e números e ter entre 8 a 12 caracteres 
+0	É necessário digitar um email para o Usuário!
+0	Formato de e-mail inválido 
+0	Telefone deve conter 10 ou 11 digítos 
+0	Telefone deve conter 10 ou 11 digítos numéricos 
+0	Selecione um perfil 
+0	Usuário teste não está sob sua jurisdição  
+0	Nenhum usuário selecionado 
+0	Nenhum usuário na lista
+0	Nenhum usuário selecionado para envio do aviso
+0	Erro ao calcular o total
+0	Erro ao carregar opções de Exercícios
+0	Erro ao carregar opções de Exercícios
+0	Erro ao calcular o total
+0	Erro ao carregar opções de Exercícios
+0	Exercício de destino e descrição nova não especificados  Informe ao menos um deles 
+0	Momento já existe no fluxo de trabalho 
+0	Momento seguinte igual ao momento da etapa 
+0	Nenhum recurso selecionado
+0	Nenhum fluxo de trabalho selecionado
+0	Mais de um fluxo de trabalho selecionado
+0	Erro ao inicializar o contexto  
+0	Selecione ao menos um órgão para ser ativado 
+0	Erro
+0	Problema
+0	Algo está errado
+0	Erro desconhecido
+0	A aplicação passou por um erro desconhecido
+0	Campo obrigatório
+0	Campos obrigatórios
+0	Selecione ao menos a Unidade ou Programa nos filtros, ou restrinja o escopo para 'Itens vinculados ao marcador'
+0	Essa funcionalidade só pode ser atribuída a usuários, não a perfis
+1	Acompanhamento salvo com sucesso.
+1	Filtro salvo com sucesso.
+1	Comentário excluído com sucesso.
+1	Análise excluída com sucesso.
+1	Filtro excluído com sucesso.
+1	Acompanhamento salvo com sucesso
+1	Acompanhamento excluído com sucesso
+1	Anexo excluído com sucesso
+1	Sequenciais dos Localizadores atualizados com sucesso em 5 segundos
+1	Metas Físicas atualizadas com sucesso em 5 segundos
+1	Carregada com sucesso em 5 segundos
+1	Tabelas de Despesa atualizadas em 5 segundos
+1	Pedidos alterados com sucesso.
+1	Vigência adicionada com sucesso
+1	Detalhe incluído com sucesso.
+1	Detalhe alterado com sucesso.
+1	Nenhuma Natureza de Receita foi selecionada
+1	Natureza(s) removida(s) com sucesso
+1	Natureza de Receita adicionada com sucesso
+1	Vigências copiadas com sucesso!
+1	Importação concluída!
+1	Impedimento validado com sucesso.
+1	Retirada a validação do impedimento com sucesso.
+1	Impedimento alterado com sucesso.
+1	Impedimentos atualizados com sucesso
+1	Análise de Proposta salva com sucesso!
+1	Arquivos gerados com sucesso. Clique no botão Salvar para baixar os arquivos.
+1	Cópia de Fontes de Recurso realizada com sucesso
+1	Órgão(s) ativado(s) com sucesso.
+1	Selecione ao menos um órgão para ser desativado.
+1	Selecione ao menos um órgão para ser desativado.
+1	Órgão(s) desativado(s) com sucesso.
+1	Registros alterados com sucesso.
+1	Tipo de alteração salvo com sucesso.
+1	Tipo de alteração excluído com sucesso.
+1	Tipos de alteração copiados com sucesso.
+1	Configurações incluídas com sucesso.
+1	Cópia realizada com sucesso!
+1	Exclusão realizada com sucesso!
+1	Registro recusado com sucesso!
+1	Registro aprovado com sucesso!
+1	Os registros marcados foram alterados com sucesso
+1	Alterada com sucesso!
+1	Bloco alterado com sucesso!
+1	Configuração(ões) alterada(s) com sucesso!
+1	Conciliação do grupo de receitas realizada com sucesso!
+1	Cópia de criada com sucesso!
+1	Operação concluída com sucesso!
+1	Artigo publicado com sucesso!
+1	Disponibilidade do cenário alterada com sucesso!
+1	Cálculo das projeções concluído com sucesso.
+1	Alterações realizadas com sucesso!
+1	Ações estão disponíveis para criação dos pedidos de reabertura.
+1	Informações de contratação de pessoal enviadas com sucesso.
+1	Informações de contratação de pessoal retornadas com sucesso.
+1	Entidades capturadas com sucesso.
+1	Contrato(s) copiado(s)
+1	Contrato salvo
+1	Contrato marcado como válido para geração de proposta
+1	Contrato(s) marcado(s) como válido(s) para geração de proposta
+1	Contrato excluído
+1	Contrato excluído
+1	Contrato(s) excluído(s)
+1	Senha de acesso enviada para o e-mail 
+1	Senha de acesso atualizada com sucesso.
+1	A senha atual será mantida.
+1	Consulta copiada com sucesso
+1	Consulta compartilhada com sucesso.
+1	Novo Registro inserido
+1	Registro(s) copiado(s)
+1	Localizador(es) excluído(s) do Pedido com sucesso
+1	Novo Registro inserido
+1	Registro salvo com sucesso
+1	Registro copiado
+1	Registro(s) zerado(s) com sucesso
+1	Localizador excluído do Pedido com sucesso
+1	Registro salvo com sucesso
+1	Localizador excluído do Pedido com sucesso
+1	Registro salvo com sucesso
+1	Localizador excluído do Pedido com sucesso
+1	Encerrando a vigência...
+1	Regras encerradas com sucesso.
+1	Alterando em bloco...
+1	Regras alteradas com sucesso.
+1	Transferências de recurso identificadas enviadas com sucesso.
+1	Transferências de recurso identificadas retornadas com sucesso.
+1	Entidades capturadas com sucesso.
+1	Transferências de recurso não identificadas enviadas com sucesso.
+1	Trasnferências de recurso não identificadas retornadas com sucesso.
+1	Entidades capturadas com sucesso.
+1	Detalhamentos de gasto enviados com sucesso.
+1	Detalhamentos de ação com marcadores retornados com sucesso.
+1	Detalhamentos de gasto com marcadores capturados com sucesso.
+1	Itens enviados com sucesso.
+1	Itens retornados com sucesso.
+1	Detalhamentos de ação capturados com sucesso.
+1	Classificação excluída com sucesso
+1	Proposta devolvida com sucesso!
+1	Planilha de Importação salva com sucesso como anexo do Pedido
+1	Análise de impedimento salva com sucesso.
+1	Importação do Congresso Nacional desfeita com sucesso
+1	Proposta enviada com sucesso!
+1	Esferas do exercício gravadas com sucesso
+1	Utilização de Excesso aprovada com sucesso
+1	Utilização de Superávit aprovada com sucesso
+1	Utilização de Excesso rejeitadas com sucesso
+1	Utilização de Superávit rejeitadas com sucesso
+1	Utilização de Excesso pré-reservadas com sucesso
+1	Utilização de Excesso pré-reservadas com sucesso
+1	Utilização de Excesso colocada 'Em análise' com sucesso
+1	Utilização de Superávit colocada 'Em análise' com sucesso
+1	Valores foram salvos com sucesso
+1	Valores copiados com sucesso
+1	Nenhum mês selecionado
+1	Dados enviados com sucesso
+1	Observação Excluída com Sucesso
+1	Valores foram salvos com sucesso
+1	Fontes de financiamento do tipo foram gravados com sucesso
+1	Importação concluída!
+1	Fontes de recursos de financiamento do tipo gravados com sucesso
+1	Propostas geradas
+1	Propostas excluídas!
+1	Dólar alterado com sucesso
+1	Cenário atualizado com sucesso!
+1	Cálculo das parcelas concluído com sucesso.
+1	Todos os precatórios foram importados com sucesso
+1	Propostas Excluídas com sucesso
+1	Propostas Geradas com sucesso
+1	Janela para o webservice fechada com sucesso.
+1	Janela para o webservice aberta com sucesso.
+1	Geração concluída com sucesso.
+1	O arquivo foi processado e os precatórios importados com sucesso.
+1	Remanejamento executado com sucesso.
+1	Parametro adicionado com sucesso
+1	Nenhum Parâmetro selecionado
+1	Parâmetros excluídos com sucesso
+1	Importação concluída!
+1	As Janelas de Trabalho foram salvas com sucesso.
+1	Janela salva (alterações aplicadas a todos os momentos).
+1	Janela(s) salva(s) (alterações aplicadas a todos os momentos).
+1	Janelas salvas (alterações aplicadas a todos os momentos).
+1	Janela(s) excluída(s), bem como as de momentos anteriores
+1	Janelas excluídas, bem como as de momentos anteriores
+1	Janela excluída, bem como as de momentos anteriores
+1	janela(s) de trabalho gravada(s) com sucesso
+1	janelas de trabalho gravadas com sucesso
+1	janela de trabalho gravada com sucesso
+1	janela(s) de trabalho excluída(s) com sucesso
+1	janelas de trabalho excluídas com sucesso
+1	janela de trabalho excluída com sucesso
+1	Momento removido com sucesso
+1	Momento removido
+1	Momento(s) adicionado(s)
+1	Momento adicionado
+1	Momentos adicionados
+1	Momento(s) adicionado(s) com sucesso
+1	Momento adicionado com sucesso
+1	Momentos adicionados com sucesso
+1	Momento adicionado
+1	Momentos adicionados
+1	Momento adicionado com sucesso
+1	Momentos adicionados com sucesso
+1	Recurso removido
+1	Recursos removidos
+1	Recurso removido com sucesso
+1	Recursos removidos com sucesso
+1	Justificativas salvas
+1	Justificativa salva
+1	Justificativas salvas com sucesso
+1	Justificativa salva com sucesso
+1	Link cadastrado
+1	Links cadastrados
+1	Link cadastrado com sucesso
+1	Links cadastrados com sucesso
+1	Marcação(ões) aplicada(s) com sucesso
+1	Marcação(ões) aplicada(s) com sucesso, exceto itens com mais de um marcador que devem ser alterados individualmente
+1	Regra salva com sucesso
+1	Regra excluída
+1	Marcador foi removido com sucesso
+1	Com sucesso!
+1	Arquivo importado com sucesso
+1	Arquivo importado
+1	Arquivo(s) importado(s)
+1	Arquivos importados
+1	Dados gravados com sucesso!
+1	Envio de dados realizado com sucesso!
+1	Nova vigência incluída com sucesso!
+1	Parâmetro financeiro removido com sucesso
+1	Parâmetro salvo. 
+1	Parâmetro excluído
+1	Importação concluída!
+1	Cálculo das parcelas concluído com sucesso.
+1	Parecer(es) enviado(s) com sucesso.
+1	Pedido de desbloqueio salvo, com sucesso com código 
+1	Importação concluída!
+1	Importação concluída!
+1	Permissões cadastradas com sucesso
+1	Permissões excluídas com sucesso
+1	Permissão excluída
+1	Operação realizada com sucesso
+1	Carga da Base de Partida realizada com sucesso.
+1	Texto do Projeto de Lei apresentado na tela gravado com sucesso.
+1	Último estado armazenado recuperado com sucesso.
+1	Parecer salvo com sucesso.
+1	Lote de emendas enviado com sucesso.
+1	Lote de emendas retornado com sucesso.
+1	Portaria revogada
+1	Precatório(s) suspenso(s) com sucesso.
+1	Precatórios suspensos com sucesso.
+1	Precatório suspenso
+1	Precatórios suspensos
+1	Precatório(s) reativados(s) com sucesso.
+1	Precatórios reativados com sucesso.
+1	Precatórios reativados
+1	Precatório reativado
+1	Selecione ao menos um produto para ser ativado.
+1	Produto(s) ativado(s) com sucesso.
+1	Produtos ativados com sucesso.
+1	Produto ativado
+1	Produtos ativados
+1	Selecione ao menos um produto para ser desativado.
+1	Produto(s) desativado(s) com sucesso.
+1	Produtos desativados com sucesso.
+1	Funcionalidade em desenvolvimento
+1	Programações orçamentárias salvas com sucesso
+1	Programações enviadas com sucesso.
+1	Programações retornadas com sucesso.
+1	Programações capturadas com sucesso.
+1	Empresa(s) incluída(s) com sucesso
+1	Empresas incluídas com sucesso
+1	Empresa incluída
+1	Empresas incluídas
+1	Justificativa Salva
+1	Justificativa Salva com sucesso
+1	Reclassificações salvas com sucesso
+1	Recurso salvo. 
+1	Recurso excluído
+1	Regionalizações de gasto enviadas com sucesso.
+1	Regionalizações de gasto capturadas com sucesso.
+1	Foram colados detalhes de RCF com sucesso.
+1	Detalhe(s) excluído(s) com sucesso
+1	Detalhe incluído com sucesso
+1	Detalhes incluídos com sucesso
+1	Detalhe alterado com sucesso
+1	Importação concluída!
+1	Operação realizada com sucesso!
+1	Regra copiada
+1	Regra copiada com sucesso
+1	Regra salva com sucesso
+1	Regra excluída com sucesso
+1	Cópia do relatório foi gerada com sucesso!
+1	Remanejamento de Descentralização efetivado com sucesso
+1	Pedidos agregados com sucesso
+1	Pedidos desagregados com sucesso
+1	Subtipo incluído no exercício
+1	Subtipo incluído no exercício com sucesso
+1	Subtipo removido do exercício 
+1	Subtipo removido do exercício com sucesso
+1	Associações de subtipos de ação com exercício gravadas com sucesso
+1	Tipos de ação do exercício gravados com sucesso
+1	Cópia realizada com sucesso
+1	Vinculações de RP salvas com sucesso
+1	Tipo de marcador foi removido com sucesso
+1	RPs aplicados com sucesso
+1	Tramitação realizada com sucesso
+1	Selecione ao menos uma unidade de medida para ser ativado.
+1	Selecione ao menos uma unidade de medida para ser ativado.
+1	Unidade de medida(s) ativada(s) com sucesso.
+1	Selecione ao menos uma unidade de medida para ser desativado.
+1	Selecione ao menos uma unidade de medida para ser desativado.
+1	Unidade de medida(s) desativada(s) com sucesso.
+1	Importação concluída!
+1	Órgão selecionado não existe nesse exercício.
+1	Órgão selecionado inválido nesse exercício.
+1	Selecione ao menos um usuário para ser ativado.
+1	Usuário(s) ativado(s) com sucesso.
+1	Usuário ativado
+1	Usuários ativados
+1	Usuário ativado com sucesso
+1	Usuários ativados com sucesso
+1	Usuário desativado.
+1	Usuários desativados.
+1	Usuário desativado com sucesso.
+1	Usuários desativados com sucesso.
+1	Removida com sucessso
+1	Removidas com sucessso
+1	Removida
+1	Removidas
+1	Usuário cadastrado(a) com sucesso
+1	Usuário cadastrada com sucesso
+1	Usuários cadastrados com sucesso
+1	Usuário alterado(a) com sucesso
+1	Usuário alterada com sucesso
+1	Usuários alterados com sucesso
+1	Usuário cadastrado(a)
+1	Usuário cadastrada
+1	Usuários cadastrados
+1	Usuário alterado(a)
+1	Usuário alterada
+1	Usuários alterados
+1	Cancelamento cancelado com sucesso
+1	Desistência cancelada com sucesso
+1	Remessa cancelada com sucesso.
+1	Download do arquivo referente remessa efetuado com sucesso.';
+1	Download do arquivo referente desistência efetuado com sucesso.';
+1	Download do arquivo referente cancelamento efetuado com sucesso.';
+1	Retorno cancelado com sucesso.
+1	Devolução cancelada com sucesso.
+1	Foram processadas 5 agências com sucesso.
+1	Título devolvido. 
+1	Título confirmado.
+1	Confirmação remessa
+1	Título devolvido feito com sucesso. 
+1	Título confirmado feito com sucesso.
+1	Confirmação remessa feito com sucesso
+1	Título devolvido efetuado com sucesso. 
+1	Título confirmado efetuado com sucesso.
+1	Confirmação remessa efetuado com sucesso
+1	Registro excluído com sucesso.
+1	Registro alterado com sucesso
+1	Download do arquivo referente confirmação efetuado com sucesso.
+1	Registro gravado com sucesso.	
+1	Cadastro realizado com sucesso
+1	Registro salvo com sucesso
+1	Romaneio recebido com sucesso
+1	Romaneio rejeitado
+1	OS aceita com sucesso
+1	Solicitação de Fiscalização para o Romaneio finalizada com sucesso.
+1	Fiscalização agendada com sucesso.
+1	Fiscalização solicitada com sucesso.
+1	Fiscalização reagendada com sucesso.
+1	Registro deletado com sucesso.
+1	Ordem de Serviço gerada com sucesso.
+1	Dados atualizados com sucesso.
+1	Fiscalização salva com sucesso.
+1	Justificativa salva com sucesso.
+1	Romaneio recebido com sucesso.
+1	Romaneio rejeitado.
+1	Documento(s) assinado(s) com sucesso.
+1	Registro de ocorrência gravada com sucesso e Devolução aceita com incidentes.
+1	Análise gravada com sucesso.
+1	Romaneio aceito com sucesso.
+1	Romaneio não aceito com sucesso.
+1	Ocorrência Salva com Sucesso.
+1	Romaneio Gerado com Sucesso.
+1	Local Definido com Sucesso.
+1	Local Aceito com Sucesso.
+1	Local Rejeitado com Sucesso.
+1	Os Cancelada com Sucesso.
+1	Foi solicitada fiscalização de digitalização em exceção
+1	Tipo de metadado excluído com sucesso.
+1	Foi solicitada fiscalização para o Romaneio de preparo com exceção
+1	A digitalização dos documentos do Romaneio foi executada.
+1	A execução da Etapa 3 do Romaneio não foi atestada.
+1	Contrato deletado com sucesso.
+1	Contrato cadastrato com sucesso.
+1	Contrato atualizado sucesso.
+1	Pasta do Romaneio foi aprovada com sucesso.
+1	Romaneio foi aprovado com sucesso.
+1	Pasta do Servidor de matrícula SIAPE adicionada com sucesso ao romaneio {sq_romaneio}.
+1	Justificativa de rejeição do Local foi Negada com sucesso. 
+1	Justificativa de rejeição do Local foi Aceita com sucesso. 
+1	Romaneio Nº justificado com sucesso. 
+1	Pasta do Romaneio foi aprovada com sucesso.
+1	Documento conferido com sucesso!
+1	Romaneio aprovado com sucesso.
+1	Ateste realizado com sucesso.
+1	Ocorrência registrada com sucesso
+1	Ocorrência justificada com sucesso
+1	Ocorrência analisada com sucesso
