@@ -23,6 +23,7 @@ public class PageFieldExtractor {
 		out.addAll(listAllInputTextField());
 		return out;
 	}
+	
 	// Call method 
 	// Change to form after
 	public List<PageField> listAllInputSubmitButtons() throws BlackMoonException{

@@ -82,15 +82,13 @@ public class MessageTrainer {
 	}
 
 	private void convertListToModel(List<MessageValue> listMessageValue) {
-
 		for (MessageValue messageValue : listMessageValue) {
 			try {
 				learnMessage(messageValue.getMessage(), messageValue.getMessageStatus());
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-		}
-		// Generate moedle
+		}	
 	}
 	
 	private void cleanFile() {

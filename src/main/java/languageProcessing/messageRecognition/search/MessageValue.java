@@ -4,12 +4,11 @@ import languageProcessing.messageRecognition.enums.MessageCategoryStatusEnum;
 import languageProcessing.messageRecognition.enums.MessageErrorCategoriesEnum;
 
 public class MessageValue {
-	// TODO put other categories
-
+	
 	private String message;
 	private MessageCategoryStatusEnum messageStatus;
 	private MessageErrorCategoriesEnum messageErrorCategory;
-
+	
 	public String getMessage() {
 		return message;
 	}
@@ -21,7 +20,7 @@ public class MessageValue {
 	public MessageCategoryStatusEnum getMessageStatus() {
 		return messageStatus;
 	}
-
+	
 	public void setMessageStatus(MessageCategoryStatusEnum messageStatus) {
 		this.messageStatus = messageStatus;
 	}

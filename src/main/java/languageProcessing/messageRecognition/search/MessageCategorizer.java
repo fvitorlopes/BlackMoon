@@ -36,7 +36,7 @@ public class MessageCategorizer {
 			}
 		}
 	}
-
+	
 	public MessageCategoryStatusEnum categorizeMessage(String message) {
 		trainModel();
 		DocumentCategorizerME myCategorizer = new DocumentCategorizerME(model);
@@ -53,15 +53,13 @@ public class MessageCategorizer {
 	private void cleanFile() {
 		try {
 			new PrintWriter("test.txt").close();
-			;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-
+	
 	public static void main(String[] args) {
 		try {
-
 			MessageCategorizer messageCategorizer = new MessageCategorizer();
 			messageCategorizer.cleanFile();
 			System.out.println("foi");
@@ -69,6 +67,5 @@ public class MessageCategorizer {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
 }
