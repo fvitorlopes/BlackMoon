@@ -1,10 +1,7 @@
 package languageProcessing.messageRecognition.training;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,8 +9,8 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-import exceptions.BlackMoonException;
 import languageProcessing.messageRecognition.enums.MessageCategoryStatusEnum;
+import languageProcessing.messageRecognition.enums.MessageErrorCategoriesEnum;
 import languageProcessing.messageRecognition.search.MessageValue;
 import opennlp.tools.doccat.DoccatModel;
 import opennlp.tools.doccat.DocumentCategorizerME;
@@ -23,74 +20,72 @@ import opennlp.tools.util.PlainTextByLineStream;
 
 public class MessageTrainer {
 
-	private void learnMessage(String message, MessageCategoryStatusEnum messageCategory) throws BlackMoonException {
-		try {
-			String line = "";
-			if (messageCategory.equals(MessageCategoryStatusEnum.ERROR)) {
-				line = line + "0";
-			} else {
-				line = line + "1";
-			}
-			line = line + "	";
-			line = line + message;
+	private String generateLine(String message, int messageCode) {
+		String line = "";
+		line = line + messageCode;
+		line = line + "	";
+		line = line + message;
+		return line;
+	}
 
-			PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("test.txt", true)));
+	public void updateFile(String line, String file) {
+		try {
+			PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(file, true)));
 			out.println(line);
 			out.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	private ArrayList<String> getLinesFile() {
-		BufferedReader in = null;
-		try {
-			in = new BufferedReader(new FileReader("message.txt"));
-		} catch (FileNotFoundException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		String str = null;
-		ArrayList<String> lines = new ArrayList<String>();
-		try {
-			while ((str = in.readLine()) != null) {
-				lines.add(str);
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return lines;
-	}
-	
-	public static void main(String[] args) {
-		MessageTrainer messageTrainer = new MessageTrainer();
-		messageTrainer.testMessageTrainer();
-	}
-
-	public void testMessageTrainer() {
-		try {
-
-		List<MessageValue> listMessageValue = new ArrayList<MessageValue>();
-		listMessageValue.add(new MessageValue("usuário não cadastrado", MessageCategoryStatusEnum.ERROR));
-		listMessageValue.add(new MessageValue("usuário cadastrado com sucesso", MessageCategoryStatusEnum.SUCCESS));
-		
-		generateModel(listMessageValue);
-	
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	private void convertListToModel(List<MessageValue> listMessageValue) {
+	private void learnStatusCategory(String message, MessageErrorCategoriesEnum statusCategoryEnum) {
+		String line = generateLine(message, statusCategoryEnum.getCategoryCode());
+		updateFile(line, "statusMessage.txt");
+	}
+
+	private void learnErrorCategory(String message, MessageCategoryStatusEnum errorCategoryEnum) {
+		String line = generateLine(message, errorCategoryEnum.getCategoryCode());
+		updateFile(line, "errorMessage.txt");
+	}
+
+	public static void main(String[] args) {
+		MessageTrainer messageTrainer = new MessageTrainer();
+		messageTrainer.testMessageTrainer();
+	}
+	
+	public void testMessageTrainer() {
+		try {
+			List<MessageValue> listMessageValue = new ArrayList<MessageValue>();
+			listMessageValue.add(new MessageValue("usuário não cadastrado", MessageCategoryStatusEnum.ERROR, MessageErrorCategoriesEnum.EMPTY_FIELD));
+			listMessageValue.add(new MessageValue("usuário cadastrado com sucesso", MessageCategoryStatusEnum.SUCCESS));
+	
+			generateModel(listMessageValue);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void convertListToErrorModel(List<MessageValue> listMessageValue) {
 		for (MessageValue messageValue : listMessageValue) {
 			try {
-				learnMessage(messageValue.getMessage(), messageValue.getMessageStatus());
+				learnErrorCategory(messageValue.getMessage(), messageValue.getMessageStatus());
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-		}	
+		}
 	}
-	
+
+	private void convertListToCategoryModel(List<MessageValue> listMessageValue) {
+		for (MessageValue messageValue : listMessageValue) {
+			try {
+				learnStatusCategory(messageValue.getMessage(), messageValue.getMessageErrorCategory());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
 	private void cleanFile() {
 		try {
 			new PrintWriter("test.txt").close();
@@ -99,18 +94,30 @@ public class MessageTrainer {
 		}
 	}
 
-	private void createModel(List<MessageValue> listMessageValue){
+	private void createCategoryModel(List<MessageValue> listMessageValue) {
 		try {
 			cleanFile();
-			for(MessageValue messageValue : listMessageValue){
-				learnMessage(messageValue.getMessage(),messageValue.getMessageStatus());
+			for (MessageValue messageValue : listMessageValue) {
+				learnStatusCategory(messageValue.getMessage(), messageValue.getMessageErrorCategory());
 			}
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
+	private void createErrorModel(List<MessageValue> listMessageValue) {
+		try {
+			cleanFile();
+			for (MessageValue messageValue : listMessageValue) {
+				learnStatusCategory(messageValue.getMessage(), messageValue.getMessageErrorCategory());
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	private DoccatModel getModelFromFile() {
 		DoccatModel out = null;
 
@@ -133,12 +140,13 @@ public class MessageTrainer {
 				}
 			}
 		}
-		 return out;
+		return out;
 	}
-	
-	public DoccatModel generateModel(List<MessageValue> messageValues){
+
+	public DoccatModel generateModel(List<MessageValue> messageValues) {
 		cleanFile();
-		convertListToModel(messageValues);
+		convertListToErrorModel(messageValues);
+		convertListToCategoryModel(messageValues);
 		return getModelFromFile();
 	}
 }

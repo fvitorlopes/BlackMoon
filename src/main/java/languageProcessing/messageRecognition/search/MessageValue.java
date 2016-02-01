@@ -38,7 +38,7 @@ public class MessageValue {
 	public void setMessageErrorCategory(MessageErrorCategoriesEnum messageErrorCategory) {
 		this.messageErrorCategory = messageErrorCategory;
 	}
-
+	
 	public MessageValue(String message, MessageCategoryStatusEnum messageStatus,
 			MessageErrorCategoriesEnum messageErrorCategory) {
 		super();
