@@ -64,5 +64,7 @@
 	<classpathentry kind="lib" path="jdbm-1.0.jar"/>
 	<classpathentry kind="lib" path="jsoup-1.8.2.jar"/>
 	<classpathentry kind="lib" path="opennlp-tools-1.6.0.jar"/>
+	<classpathentry kind="lib" path="jasperreports-5.0.1.jar"/>
+	<classpathentry kind="lib" path="iText-2.1.7.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

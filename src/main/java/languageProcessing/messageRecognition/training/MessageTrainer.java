@@ -47,7 +47,7 @@ public class MessageTrainer {
 		String line = generateLine(message, errorCategoryEnum.getCategoryCode());
 		updateFile(line, "errorMessage.txt");
 	}
-
+	
 	public static void main(String[] args) {
 		MessageTrainer messageTrainer = new MessageTrainer();
 		messageTrainer.testMessageTrainer();
@@ -58,7 +58,7 @@ public class MessageTrainer {
 			List<MessageValue> listMessageValue = new ArrayList<MessageValue>();
 			listMessageValue.add(new MessageValue("usuário não cadastrado", MessageCategoryStatusEnum.ERROR, MessageErrorCategoriesEnum.EMPTY_FIELD));
 			listMessageValue.add(new MessageValue("usuário cadastrado com sucesso", MessageCategoryStatusEnum.SUCCESS));
-	
+			
 			generateModel(listMessageValue);
 
 		} catch (Exception e) {
